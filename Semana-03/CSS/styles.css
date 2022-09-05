@@ -1,0 +1,53 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    width: calc(100% - 334px);
+}
+body header,
+body main,
+body footer {
+    left: 334px;
+    display: block;
+    position: relative;
+}
+h1 {
+    margin: px;
+    font-weight: bold;
+    color: #FFFFFF;
+    width: 50%;
+    height: 50%;
+    font-size: 110px;
+}
+.menu {
+    top: 0;
+    left: 0;
+    position: fixed;
+    display: block;
+    width: 334px;
+    height: 100%;
+    color: #FFFFFF;
+    background-color: #707070;
+}
+.menu .icon {
+    max-width: 35px;
+}
+.menu .link {
+    font-weight: bold;
+    color: white;
+}
+.menufooter {
+    position: absolute;
+    bottom: 68px;
+    left: 18px;
+}
+header {
+    background-color: #373867;
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    
+}
+
+.networks {
+}
+/* comentario */
