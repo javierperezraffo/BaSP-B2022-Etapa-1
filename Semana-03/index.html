@@ -5,11 +5,17 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Reduce costs in the company, manage personnel with customized software">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./CSS/reset.css">
+        <link rel="stylesheet" href="./CSS/styles.css"/>
         <title>Trackgenix</title>
     </head>
     <body>
         <header>
-            <h1>Trackgenix</h1>
+            <h1 >Trackgenix</h1>
+            <section class="networks">
                 <a href="https://www.linkedin.com/" target="_blank">
                     <img src="assets/LinkedInIcon.png"  alt="LinkedIn"/>
                 </a>
@@ -21,33 +27,34 @@
                 </a>
                 <a href="https://twitter.com/" target="_blank">
                     <img src="assets/Twittericon.png"  alt="Twitter"/>
-            </a>
+                </a>
+            </section>
             <p>
                 By GigaTech Sofware Solution
             </p>
         </header>
-        <aside>
+        <aside class="menu">
             <input type="search" id="search" name="search" placeholder="Search...">
             <ul>
                 <li>
-                    <a href="#">
-                        <img src="assets/HomeIcon.png" alt="img"> 
+                    <a href="#" class="link">
+                        <img src="assets/HomeIcon.png" alt="img" class="icon">
                         <span>
                             Home
                         </span>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
-                        <img src="assets/PersonIcon.png" alt="img">
+                    <a href="#" class="link">
+                        <img src="assets/PersonIcon.png" alt="img" class="icon">
                         <span>
                             Sign up
                         </span>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
-                        <img src="assets/2PersonIcon.png" alt="img">
+                    <a href="#" class="link">
+                        <img src="assets/2PersonIcon.png" alt="img" class="icon">
                         <span>
                             Log in
                         </span>
@@ -62,9 +69,15 @@
                         </ol>
                 </section>
             </ul>
-            <h3>Contact us</h3>
-            <h4>sampletext@gmail.com</h4>
-            <h4>Av. 18 de Julio 5555, Montevideo, Uruguay</h4>
+            <section class="menufooter">
+                <h3>Contact us</h3>
+                <section>
+                    <h4>sampletext@gmail.com</h4>
+                    <img src="/Semana-03/assets/MailIcon.png" alt="mailicon.png">
+                </section>
+                <h4>Av. 18 de Julio 5555, Montevideo, Uruguay</h4>
+                <img src="/Semana-03/assets/BuildingIcon.png" alt="buildingIcon.png">
+            </section>
         </aside>
         <main>
             <section>
@@ -137,7 +150,7 @@
                     <input type="text" id="name" name="name" value="">
                     <label for="email">Email:</label>
                     <input type="email" id="email" name="email" value="">
-                    <label for="contactarea">Contact area</label>
+                    <label >Contact area:</label>
                     <input type="radio" id="humanresouces" name="area" value="Human resouces">
                     <label for="humanresouces">Human resouces</label>
                     <input type="radio" id="systems" name="area" value="Systems">
