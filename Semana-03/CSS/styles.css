@@ -2,7 +2,6 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
     width: calc(100% - 334px);
-    background-color: #D9D9D9;
 }
 body header,
 body main,
@@ -15,13 +14,16 @@ header {
     background-color: #373867;
     position: absolute;
     width: 100%;
-    height: 20%;   
+    height: 150px;   
 }
 h1 {
     padding: 30px 100px 100px 130px;
     font-weight: bold;
     color: #FFFFFF;
     font-size: 100px;
+}
+.graybackground {
+    background-color: #D9D9D9;
 }
 .networks {
     float: right;
@@ -36,10 +38,103 @@ h1 {
     font-size: 18px;
 }
 .descriptive {
+}
+.keeptrack {
+    font-weight: bold;
+    width: 300px;
+    font-size: 40px;
+    color: #AACE9B;
     position: absolute;
-    left: 0px;
-    top: 90px;
-    size: 30px;
+    top: 80px;
+    left: 20px;
+}
+.ourhr {
+    position: absolute;
+    width: 410px;
+    right: 0;
+    top: 320px;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 170%;
+    text-align: right;
+    letter-spacing: 0.125em;
+    color: #373867;
+    background-color: #AACE9B;
+    opacity: 80%;
+    border-radius: 5% 0% 0% 5%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.infocontainer {
+    position: relative;
+}
+.whytrackgenix {
+    width: 629px;
+    right: 200px;
+    height: 77px;
+    font-size: 48px;
+    text-align: center;
+    color: #000000;
+    margin-top: 40px;
+}
+.weseek {
+    padding: 5%;
+    padding-top: 0%;
+    width: 567px;
+    left: 422px;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 170%;
+    color: #373867;
+}
+.doingyourbusiness {
+    position: absolute;
+    top: 70%;
+    left: 229px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    color: #373867;
+}
+.infocirclefather {
+    position: absolute;
+    right: 100px;
+    top: 100px;
+}
+.infocircle {
+    display: table;
+    background-color: #373867;
+    width: 150px;
+    height: 150px;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    text-align: center;
+    color: #AACE9B;
+    border: 10px solid #707070;
+    border-radius: 50%;
+}
+.infocircle.alt {
+    transform: translateX(-100px);
+}
+.infocircle h3 {
+    display: table-cell;
+    vertical-align: middle;
+}
+.greensquares {
+    display: inline-block;
+}
+.howgigatech {
+    background-color: #D9D9D954
+    border: solid;
+    padding: 5%;
+    padding-top: 0%;
+    width: 567px;
+    left: 422px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 170%;
 }
 .sidebar {
     top: 0;
