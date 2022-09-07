@@ -138,15 +138,21 @@ h1 {
     margin: 30px;
 }
 .howgigatech {
-    background-color: #D9D9D954
     border: solid;
-    padding: 5%;
-    padding-top: 0%;
-    width: 567px;
-    left: 422px;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+    color: #373867;
+    margin: 20px 250px 40px;
+    padding: 20px;
+}
+.in2021 {
+    text-align: left;
     font-weight: 400;
     font-size: 20px;
-    line-height: 170%;
+    display: block;
+    padding: 20px;
 }
 .sidebar {
     top: 0;
