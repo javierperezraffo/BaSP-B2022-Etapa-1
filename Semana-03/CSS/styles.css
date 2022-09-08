@@ -88,9 +88,9 @@ h1 {
     color: #373867;
 }
 .doingyourbusiness {
+    padding-left: 229px;
     position: relative;
     top: 70%;
-    left: 229px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 600;
@@ -128,16 +128,22 @@ h1 {
 .item {
     display: inline-block;
     width: 150px;
-    height: 150px;
+    height: 120px;
     background-color: #AACE9B;
     border-radius: 10%;
     text-align: center;
     vertical-align: middle;
-    padding: 30px ;
+    padding: 30px;
+    padding-top: 60px;
     font-weight: bold;
     margin: 30px;
 }
+.whitebackground {
+    background-color: white;
+    padding-top: 100px;
+}
 .howgigatech {
+    background-color: #D9D9D9;
     border: solid;
     font-weight: bold;
     font-size: 30px;
@@ -155,29 +161,52 @@ h1 {
     padding: 20px;
 }
 fieldset {
+    width: 520px;
     display: grid;
     padding: 50px 90px;
     margin: 40px 250px;
-    border: solid;
     border-radius: 5px;
-    background-color: #f2f2f2;
 }
 .requestinfo{
     font-size: 25px;
     margin: 20px;
 }
-input[type=text], select {
+input, select, textarea {
     padding: 12px 30px;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
+input[type=text],input[type=email] {
+    max-width: 310px;
+}
 input[type=submit] {
-    width: 90%;
+    width: 100%;
     background-color:#AACE9B;
     padding: 20px 50px;
     margin: 8px 0;
     border-radius: 4px;
     cursor: pointer;
+}
+fieldset label {
+    margin: 10px;
+    margin-left: 0px;
+}
+.extrascontainers {
+    padding: 30px ;
+    font-weight: bold;
+    padding-left: 140px;
+    line-height: 1.7;
+}
+.item2 {
+    display: inline-block;
+    margin: 100px;
+}
+.item2 ul {
+    list-style: decimal;
+}
+.item2 a {
+    color: #000000;
+    text-decoration: none;
 }
 .sidebar {
     top: 0;
@@ -189,15 +218,46 @@ input[type=submit] {
     color: #FFFFFF;
     background-color: #707070;
 }
+.search {
+    display: block;
+    margin: 20px auto;
+    margin-bottom: 80px;
+}
 .sidebar .icon {
+    margin-right: 10px;
     max-width: 35px;
 }
 .sidebar .link {
+    display: block;
+    text-decoration: none;
     font-weight: bold;
     color: white;
+    margin: 30px;
+}
+.sidebarsubmenu {
+    margin: 40px 90px;
 }
 .sidebarfooter {
     position: absolute;
     bottom: 68px;
     left: 18px;
+}
+.sidebarfooter h3 {
+    font-size: 2em;
+    margin: 20px;
+    color: #000000;
+}
+.sidebarfooter h4 {
+    display: inline;
+    color: #000000;
+    font-size: 14px;
+}
+.sidebarfooter img {
+    display: inline;
+    max-width: 28px;
+}
+footer {
+    text-align: center;
+    padding: 50px;
+    background-color: #373867;
 }
