@@ -88,7 +88,8 @@ h1 {
     color: #373867;
 }
 .doingyourbusiness {
-    padding-left: 229px;
+    padding-left: 70px;
+    margin: 35px;
     position: relative;
     top: 70%;
     font-family: 'Inter';
@@ -99,7 +100,7 @@ h1 {
 }
 .infocirclefather {
     position: absolute;
-    right: 100px;
+    right: 150px;
     top: 100px;
 }
 .infocircle {
@@ -144,13 +145,12 @@ h1 {
 }
 .howgigatech {
     background-color: #D9D9D9;
-    border: solid;
     font-weight: bold;
     font-size: 30px;
     line-height: 35px;
     text-align: center;
     color: #373867;
-    margin: 20px 250px 40px;
+    margin: 5px 250px 60px;
     padding: 20px;
 }
 .in2021 {
@@ -190,6 +190,13 @@ input[type=submit] {
 fieldset label {
     margin: 10px;
     margin-left: 0px;
+}
+fieldset h2 {
+    font-weight: bold;
+    text-align: center;
+}
+.contactarea {
+    margin: 30px 0 30px;
 }
 .extrascontainers {
     padding: 30px ;
