@@ -14,7 +14,7 @@ header {
     background-color: #373867;
     position: absolute;
     width: 100%;
-    height: 150px;   
+    height: 150px;
 }
 h1 {
     padding: 30px 100px 100px 130px;
@@ -158,16 +158,21 @@ h1 {
     display: block;
     padding: 20px;
 }
-fieldset {
-    width: 520px;
+.requestinfotable h2 {
+    font-size: 25px;
+    margin: 20px;
+}
+.requestinfotable {
+    margin-top: 300px;
+    margin-left: 200px;
+    width: 420px;
     display: grid;
     padding: 50px 90px;
     margin: 40px 250px;
     border-radius: 5px;
 }
-.requestinfo{
-    font-size: 25px;
-    margin: 20px;
+.requestinfotable label {
+    display: block;
 }
 input, select, textarea {
     padding: 12px 30px;
