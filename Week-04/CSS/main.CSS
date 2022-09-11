@@ -1,0 +1,203 @@
+
+.DescriptiveDesktop {
+    display: none;
+}
+main {
+    background-color: #373867;
+}
+.KeepTrack {
+    font-weight: bold;
+    font-size: 110%;
+    color: #AACE9B;
+    margin-left: 8%;
+}
+.greenbubble {
+    margin 10%;
+    text-align: center;
+    line-height: 170%;
+    letter-spacing: 0.125em;
+    color: #373867;
+    background-color: #AACE9B;
+    border-radius: 65px;
+    padding: 20px;
+    box-sizing: border-box;
+    align-self: center;
+    justify-content: center;
+}
+/* .graybackground {
+    background-color: #D9D9D9;
+}
+.networks {
+    float: right;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+.gigatech {
+    top: 120px;
+    right: 465px;
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+.ourhr {
+    width: 410px;
+    right: 0;
+    top: 320px;
+    font-weight: 80px;
+    font-size: 24px;
+    line-height: 170%;
+    text-align: right;
+    letter-spacing: 0.125em;
+    color: #373867;
+    background-color: #AACE9B;
+    opacity: 80%;
+    border-radius: 5% 0% 0% 5%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.infocontainer {
+}
+.whytrackgenix {
+    width: 629px;
+    right: 200px;
+    height: 77px;
+    font-size: 48px;
+    text-align: center;
+    color: #000000;
+    margin-top: 40px;
+}
+.weseek {
+    padding: 5%;
+    padding-top: 0%;
+    width: 567px;
+    left: 422px;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 170%;
+    color: #373867;
+}
+.doingyourbusiness {
+    padding-left: 70px;
+    margin: 35px;
+    top: 70%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    color: #373867;
+}
+.infocirclefather {
+    right: 150px;
+    top: 100px;
+}
+.infocircle {
+    background-color: #373867;
+    width: 150px;
+    height: 150px;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    text-align: center;
+    color: #AACE9B;
+    border: 10px solid #707070;
+    border-radius: 50%;
+}
+.infocircle.alt {
+    transform: translateX(-100px);
+}
+.infocircle h3 {
+    vertical-align: middle; */
+}
+/* .greensquares {
+    margin: 50px;
+}
+.item {
+    width: 150px;
+    height: 120px;
+    background-color: #AACE9B;
+    border-radius: 10%;
+    text-align: center;
+    vertical-align: middle;
+    padding: 30px;
+    padding-top: 60px;
+    font-weight: bold;
+    margin: 30px;
+}
+.whitebackground {
+    background-color: white;
+    padding-top: 100px;
+}
+.howgigatech {
+    background-color: #D9D9D9;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+    color: #373867;
+    margin: 5px 250px 60px;
+    padding: 20px;
+}
+.in2021 {
+    text-align: left;
+    font-weight: 400;
+    font-size: 20px;
+    padding: 20px;
+}
+.requestinfotable h2 {
+    font-size: 25px;
+    margin: 20px;
+}
+.requestinfotable {
+    margin-top: 300px;
+    margin-left: 200px;
+    width: 420px;
+    display: grid;
+    padding: 50px 90px;
+    margin: 40px 250px;
+    border-radius: 5px;
+}
+.requestinfotable label {
+}
+input, select, textarea {
+    padding: 12px 30px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+input[type=text],input[type=email] {
+    max-width: 310px;
+}
+input[type=submit] {
+    width: 100%;
+    background-color:#AACE9B;
+    padding: 20px 50px;
+    margin: 8px 0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+fieldset label {
+    margin: 10px;
+    margin-left: 0px;
+}
+fieldset h2 {
+    font-weight: bold;
+    text-align: center;
+}
+.contactarea {
+    margin: 30px 0 30px;
+}
+.extrascontainers {
+    padding: 30px ;
+    font-weight: bold;
+    padding-left: 140px;
+    line-height: 1.7;
+}
+.item2 {
+    margin: 100px;
+}
+.item2 ul {
+    list-style: decimal;
+}
+.item2 a {
+    color: #000000;
+    text-decoration: none;
+} */

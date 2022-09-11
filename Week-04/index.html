@@ -9,21 +9,76 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./CSS/reset.css">
-        <link rel="stylesheet" href="./CSS/styles.css"/>
+        <link rel="stylesheet" href="./CSS/styles.css">
+        <link rel="stylesheet" href="./CSS/header.CSS">
+        <link rel="stylesheet" href="./CSS/main.CSS">
+        <link rel="stylesheet" href="./CSS/aside.CSS">
+        <link rel="stylesheet" href="./CSS/footer.CSS">
         <title>Trackgenix</title>
     </head>
     <body>
+        <aside class="sidebar">
+            <input class="search" type="search" id="search" name="search" placeholder="Search...">
+            <ul>
+                <li>
+                    <a href="#" class="link">
+                        <img src="assets/HomeIcon.png" alt="img" class="icon">
+                        <span>
+                            Home
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="link">
+                        <img src="assets/PersonIcon.png" alt="img" class="icon">
+                        <span>
+                            Sign up
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="link">
+                        <img src="assets/2PersonIcon.png" alt="img" class="icon">
+                        <span>
+                            Log in
+                        </span>
+                    </a>
+                </li>
+                <li class="sidebarsubmenu">
+                    <p>Submenu</p>
+                    <ol>
+                        <li>Placeholder</li>
+                        <li>Placeholder</li>
+                        <li>Placeholder</li>
+                    </ol>
+                </li>
+            </ul>
+            <section class="sidebarfooter">
+                <h3>Contact us</h3>
+                <section>
+                    <img src="assets/MailIcon.png" alt="mailicon.png">
+                    <h4>sampletext@gmail.com</h4>
+                </section>
+                <section>
+                    <img src="assets/BuildingIcon.png" alt="buildingIcon.png">
+                    <h4>Av. 18 de Julio 5555, Montevideo, Uruguay</h4>
+                </section>
+            </section>
+        </aside>
         <header>
             <a class="MenuPoints" href="MenuPoints">
                 <img src="assets/MenuPoints.png" alt="MenuPoints">
             </a>
-            <a href="DescriptiveMobile">
+            <section class="DescriptiveMobile" href="DescriptiveMobile">
                 <img src="assets/descriptive-image.jpg" alt="DescriptiveMobile.jpg">
-            </a>
-            <p class="gigatech">
-                By GigaTech Sofware Solution
-            </p>
-            <section class="networks">
+            </section>
+            <section>
+                <h1>Trackgenix</h1>
+                <p class="gigatech">
+                    By GigaTech Sofware Solution
+                </p>
+            </section>
+            <section class="Networks">
                 <a href="https://www.linkedin.com/" target="_blank">
                     <img src="assets/LinkedInIcon.png"  alt="LinkedIn"/>
                 </a>
@@ -37,65 +92,23 @@
                     <img src="assets/Twittericon.png"  alt="Twitter"/>
                 </a>
             </section>
-            <h1 >Trackgenix</h1>
         </header>
         <main>
-            <aside class="sidebar">
-                <input class="search" type="search" id="search" name="search" placeholder="Search...">
-                <ul>
-                    <li>
-                        <a href="#" class="link">
-                            <img src="assets/HomeIcon.png" alt="img" class="icon">
-                            <span>
-                                Home
-                            </span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="link">
-                            <img src="assets/PersonIcon.png" alt="img" class="icon">
-                            <span>
-                                Sign up
-                            </span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="link">
-                            <img src="assets/2PersonIcon.png" alt="img" class="icon">
-                            <span>
-                                Log in
-                            </span>
-                        </a>
-                    </li>
-                    <li class="sidebarsubmenu">
-                        <p>Submenu</p>
-                        <ol>
-                            <li>Placeholder</li>
-                            <li>Placeholder</li>
-                            <li>Placeholder</li>
-                        </ol>
-                    </li>
-                </ul>
-                <section class="sidebarfooter">
-                    <h3>Contact us</h3>
-                    <section>
-                        <img src="assets/MailIcon.png" alt="mailicon.png">
-                        <h4>sampletext@gmail.com</h4>
-                    </section>
-                    <section>
-                        <img src="assets/BuildingIcon.png" alt="buildingIcon.png">
-                        <h4>Av. 18 de Julio 5555, Montevideo, Uruguay</h4>
-                    </section>
+            <section>
+                <section class="KeepTrack">
+                    <p>
+                        Keep track
+                    <p/>
+                    <p>
+                        of your employees' progress easily
+                    </p>
                 </section>
-            </aside>
-            <section class="graybackground">
                 <section>
-                    <h2 class="keeptrack">Keep track of your employees' progress easily</h2>
-                    <a href="#" target="_blank">
+                    <a href="#" target="_blank" class="DescriptiveDesktop">
                         <img src="assets/descriptive-image.jpg"  alt="img"/>
                     </a>
                 </section>
-                <section class="ourhr">
+                <section class="greenbubble">
                     <p>
                         Our HR management software will allow you to have a traceability of your employees, manage
                         teams easily and take your leadership to the next level.
