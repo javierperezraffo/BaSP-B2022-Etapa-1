@@ -1,4 +1,6 @@
 main {
+    display: flex;
+    flex-direction: column;
     background-color: #373867;
 }
 .keepTrack {
@@ -10,7 +12,7 @@ main {
     margin-left: 20px;
 }
 .greenBubble {
-    text-align: center;
+    align-self:  center;
     line-height: 170%;
     letter-spacing: 0.125em;
     color: #373867;
@@ -165,27 +167,75 @@ input[type=submit] {
     
 }
 @media screen and (min-width:480px) {
-    main {
-        .keepTrack {
-            position: absolute;
-            top: px;
-            left: 10px;
-            font-size: 120px;
-            font-weight: bold;
-            font-size: 110%;
-            color: #AACE9B;
-            margin-left: 8%;
-        }
-
- }
- @media screen and (min-width:768px) {
-    aside {
+    .keepTrack {
+        position: absolute;
+        top: 170px;
+        font-weight: bold;
+        font-size: 120%;
+        color: #AACE9B;
+        width: 40%;
     }
-    header {
+    .greenBubble {
+        position: absolute;
+        align-self: flex-end;
+        width: 200px;
+        font-size: 20px;
+        line-height: 100%;
+        text-align: right;
+        letter-spacing: 0.125em;
+        color: black;
+        background-color: #AACE9B;
+        opacity: 70%;
+        border-radius: 5% 0% 0% 5%;
+        padding: 10px;
+        margin: 0;
+        top: 25%;
     }
-    main { 
+    .infoContainer {
+        display: flex;
     }
-    footer {
+    .infoContainer h2 {
+        font-weight: bold;
+        font-size: 25px;
+        color: #AACE9B;
+        margin-left: 12%;
+        margin-top: 12%;
+        text-align: start;
+    }
+    .infoContainer p {
+        text-align: start;
+        line-height: 1.1;
+        margin-top: 25px;
+    }
+    .infoContainer h3 {
+        margin-left: 120px;
+        margin-top: 20px;
+    }
+    .infoCircleFather {
+        display: flex;
+        flex-direction: column;
+        margin-right: 5%;
+        margin-top: 15%;
+        right: 150px;
+        top: 100px;
+    }
+    .infoCircle {
+        display: table;
+        margin: 3%;
+        background-color: #373867;
+        width: 80px;
+        height: 80px;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 10px;
+        text-align: center;
+        color: #AACE9B;
+        border: 8px solid #707070;
+        border-radius: 50%;
+    }
+    .infoCircle h3 {
+        display: table-cell;
+        vertical-align: middle;
     }
  }
  @media screen and (min-width:1024px) {
