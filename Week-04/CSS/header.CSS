@@ -4,29 +4,73 @@ header {
     display: flex;
 }
 header h1 {
-    display: flex;
     font-weight: bold;
     color: #FFFFFF;
     font-size: 70px;
-    justify-content: center;
 }
 .MenuPoints {
-    color: #FFFFFF;
     align-self: flex-end;
     filter: invert();
     margin-right: 8%;
 }
 .DescriptiveMobile img {
     border-radius: 0% 0% 30% 30%;
-    display: flex;
     width: 100%;
 }
-.Networks {
+.DescriptiveTablet img {
+    display: none;
+}
+.NetworksMobileTop {
     display: none;
 }
 .gigatech {
     text-align: end;
     font-size: 80%;
-    margin-right: 5%;
     margin-bottom: 2%;
+}
+@media screen and (min-width:480px) {
+    .NetworksMobileTop {
+        display: flex;
+        justify-content: end;
+        margin-right: 20px;
+        margin-top: 20px;
+    }
+    header {
+        width: 100%;
+        height: 150px;
+    }
+    .MenuPoints {
+        align-self: flex-start;
+        margin-left: 5%;
+    }
+    .DescriptiveMobile {
+        display: none;
+    }
+    .DescriptiveTablet {
+        position: relative;
+        margin-top: 30px;
+    }
+    .DescriptiveTablet img {
+        border-radius: 0 60px 60px 0;
+        width: 80%;
+        display: block;
+    }
+    header h1 {
+        font-weight: bold;
+        color: #FFFFFF;
+        font-size: 80px;
+        justify-content: left;
+        margin-left: 5%;
+    }
+    .gigatech {
+        padding: 5px;
+        margin-top: 10px;
+        padding-right: 25px;
+        background-color: white;
+    }
+
+}
+ @media screen and (min-width 1024px) {
+header {
+}
 }

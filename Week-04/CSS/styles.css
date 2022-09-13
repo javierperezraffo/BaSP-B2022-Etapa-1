@@ -1,5 +1,26 @@
 body {
     font-family: 'Roboto', sans-serif;
-    font-size: 100%px;
-    /* outline: 1px solid red !important; */
+    display: flex;
+    flex-direction: column;
 }
+
+ @media screen and (min-width:480px) {
+    aside {
+    }
+    header {
+    }
+    main { 
+    }
+    footer {
+    }
+}
+ @media screen and (min-width:1024px) {
+    aside {
+    }
+    header {
+    }
+    main { 
+    }
+    footer {
+    }
+ }

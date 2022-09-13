@@ -69,7 +69,7 @@
             <a class="MenuPoints" href="MenuPoints">
                 <img src="assets/MenuPoints.png" alt="MenuPoints">
             </a>
-            <section class="DescriptiveMobile" href="DescriptiveMobile">
+            <section class="DescriptiveMobile">
                 <img src="assets/descriptive-image.jpg" alt="DescriptiveMobile.jpg">
             </section>
             <section>
@@ -78,7 +78,7 @@
                     By GigaTech Sofware Solution
                 </p>
             </section>
-            <section class="Networks">
+            <section class="NetworksMobileTop">
                 <a href="https://www.linkedin.com/" target="_blank">
                     <img src="assets/LinkedInIcon.png"  alt="LinkedIn"/>
                 </a>
@@ -95,19 +95,18 @@
         </header>
         <main>
             <section>
-                <section class="KeepTrack">
-                    <p>
-                        Keep track
-                    <p/>
-                    <p>
-                        of your employees' progress easily
-                    </p>
+                <section class="DescriptiveTablet">
+                    <img src="assets/descriptive-image.jpg" alt="DescriptiveTablet.jpg">
+                    <section class="KeepTrack">
+                        <p>
+                            Keep track
+                        </p>
+                        <p>
+                            of your employees' progress easily
+                        </p>
+                    </section>
                 </section>
-                <section>
-                    <a href="#" target="_blank" class="DescriptiveDesktop">
-                        <img src="assets/descriptive-image.jpg"  alt="img"/>
-                    </a>
-                </section>
+                
                 <section class="GreenBubble">
                     <p>
                         Our HR management software will allow you to have a traceability of your employees, manage
@@ -202,20 +201,24 @@
                             </fieldset>
                             <fieldset>
                                 <label >Contact area:</label>
-                                <span>
-                                    <input type="radio" id="humanresouces" name="area" value="Human resouces">
-                                    <label for="humanresouces">Human resouces</label>
-                                </span>
-                                <span>
-                                    <input type="radio" id="systems" name="area" value="Systems">
-                                    <label for="systems">Systems</label>
-                                </span>
-                                <span>
-                                    <input type="radio" id="marketing" name="area" value="Marketing">
-                                    <label for="marketing">Marketing</label>
-                                </span>
+                                <div>
+                                    <span>
+                                        <input type="radio" id="humanresouces" name="area" value="Human resouces">
+                                        <label for="humanresouces">Human resouces</label>
+                                    </span>
+                                    <span class="Sistems">
+                                        <input type="radio" id="systems" name="area" value="Systems">
+                                        <label for="systems">Systems</label>
+                                    </span>
+                                </div>
+                                <div>
+                                    <span>
+                                        <input type="radio" id="marketing" name="area" value="Marketing">
+                                        <label for="marketing">Marketing</label>
+                                    </span>
+                            </div>
                             </fieldset>
-                            <fieldset>
+                            <fieldset class="SubmitWhite">
                                 <label for="message">Message:</label>
                                 <textarea name="message" id="message" cols="50" rows="5" placeholder="Message"></textarea>
                                 <input type="submit" value="Request information">
@@ -223,8 +226,8 @@
                         </fieldset>
                     </form>
                 </section>
-                <section class="extrascontainers">
-                    <ul>
+                <section class="ExtrasContainers">
+                    <div>
                         <li class="item2">
                             <h3>Our product</h3>
                             <ul>
@@ -234,6 +237,8 @@
                                 <li><a href="#">Extras</a></li>
                             </ul>
                         </li>
+                    </div>
+                    <div>
                         <li class="item2">
                             <h3>Company</h3>
                             <ul>
@@ -243,6 +248,8 @@
                                 <li><a href="#">Blog</a></li>
                             </ul>
                         </li>
+                    </div>
+                    <div>
                         <li class="item2">
                             <h3>Suport</h3>
                             <ul>
@@ -252,11 +259,25 @@
                                 <li><a href="#">Contact</a></li>
                             </ul>
                         </li>
-                    </ul>
+                    </div>
                 </section>
-            </section>
+                <section class="ContactUs">
+                    <h3>Contact us</h3>
+                    
+                    <section>
+                        <img src="assets/MailIcon.png" alt="mailicon.png">
+                        <h4>sampletext@gmail.com</h4>
+                    </section>
+                    <section>
+                        <img src="assets/BuildingIcon.png" alt="buildingIcon.png">
+                        <h4>Av. 18 de Julio 5555, Montevideo, Uruguay</h4>
+                    </section>
+                    
+                </section>
+            </div>
         </main>
         <footer>
+            <div class="NetworksMobile">
             <a href="https://www.linkedin.com/" target="_blank">
                 <img src="assets/LinkedInIcon.png"  alt="LinkedIn"/>
             </a>
@@ -269,6 +290,7 @@
             <a href="https://twitter.com/" target="_blank">
                 <img src="assets/Twittericon.png"  alt="Twitter"/>
             </a>
+            </div>
             <p>
                 Copyright © 2022 GigaTech Software Solutions. All rights reserved.
             </p>
