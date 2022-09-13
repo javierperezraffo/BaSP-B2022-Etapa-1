@@ -1,12 +1,15 @@
-
-
 main {
     background-color: #373867;
 }
-.KeepTrack {
-    display: none;
+.keepTrack {
+    font-weight: bold;
+    width: 350px;
+    font-size: 20px;
+    color: #AACE9B;
+    margin-top: 20px;
+    margin-left: 20px;
 }
-.GreenBubble {
+.greenBubble {
     text-align: center;
     line-height: 170%;
     letter-spacing: 0.125em;
@@ -19,16 +22,16 @@ main {
     justify-content: center;
     margin: 10% 8%;
 }
-.InfoContainer {
+.infoContainer {
     align-self: center;
     color: white;
 }
-.WhyTrackgenix {
+.whyTrackgenix {
     font-size: 40px;
     text-align: center;
     margin: 20px;
 }
-.InfoContainer p {
+.infoContainer p {
     font-size: 16px;
     text-align: left;
     margin: 10px;
@@ -36,17 +39,17 @@ main {
     margin-right: 45px;
     line-height: 1,5;
 }
-.DoingYourBusiness {
+.doingYourBusiness {
     font-size: 20px;
     text-align: center;
     top: 5px;
 }
-.InfoCircleFather {
+.infoCircleFather {
     display: none;
 }
-.GreenSquares {
-    padding: 20px;
+.greenSquares {
     display: flex;
+    padding: 20px;
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
@@ -57,41 +60,41 @@ main {
     align-content: space-around;
 }
 .item {
+    display: flex;
+    justify-content: center;
+    text-align: center;
     width: 140px;
     height: 140px;
     background-color: #AACE9B;
     border-radius: 10%;
-    display: flex;
     align-items: justify;
     display: inline-block;
     font-weight: bold;
     margin: 10px;
-    justify-content: center;
-    text-align: center;
 }
 .item h3 {
     padding: 10%;
 }
-.WhiteBackground {
+.whiteBackground {
     background-color: white;
 }
-.GigaTechHistory {
+.gigatechHistory {
     padding-top: 8%;
     background-color: #D9D9D947;
 }
-.GigaTechHistory h2 {
-    font-weight: bold;
-    font-size: 38px;
+.gigatechHistory h2 {
     text-align: center;
+    font-size: 38px;
+    font-weight: bold;
 }
-.GigaTechHistory p {
+.gigatechHistory p {
     text-align: justify;
     padding: 5%;
     line-height: 1.4;
     margin-left: 6%;
     margin-right: 6%;
 }
-.RequestInfoTable {
+.requestInfoTable {
     display: flex;
     display: grid;
     margin: 5%;
@@ -100,12 +103,12 @@ main {
     justify-content: space-around;
     line-height: 2.2;
 }
-.RequestInfoTable h2 {
+.requestInfoTable h2 {
     font-weight: bold;
     font-size: 150%;
     margin-bottom: 5%;
 }
-.RequestInfoTable fieldset {
+.requestInfoTable fieldset {
     display: flex;
     flex-direction: column;
 }
@@ -124,10 +127,10 @@ input[type=submit] {
     font-size: 120%;
     align-self: justify;
 }
-.Sistems {
+.sistems {
     margin-left: 20%;
 }
-.ExtrasContainers {
+.extrasContainers {
     display: flex;
     padding: 10px ;
     font-weight: bold;
@@ -144,27 +147,26 @@ input[type=submit] {
     color: #000000;
     text-decoration: none;
 }
-.ContactUs {
+.contactUs {
     margin-left: 15%;
-    display: flex;
     flex-direction: column;
 }
-.ContactUs h3 {
+.contactUs h3 {
     font-size: 2em;
     margin: 20px;
 }
-.ContactUs h4 {
+.contactUs h4 {
     display: inline;
     font-size: 14px;
 }
-.ContactUs img {
+.contactUs img {
     max-width: 25px;
     filter: invert();
     
 }
 @media screen and (min-width:480px) {
     main {
-        .KeepTrack {
+        .keepTrack {
             position: absolute;
             top: px;
             left: 10px;

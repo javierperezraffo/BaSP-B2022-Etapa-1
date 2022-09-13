@@ -1,56 +1,70 @@
 header {
+    display: flex;
     background-color: #373867;
     flex-direction: column;
-    display: flex;
 }
 header h1 {
     font-weight: bold;
     color: #FFFFFF;
-    font-size: 70px;
+    font-size: 50px;
+    margin-left: 20px;
 }
-.MenuPoints {
+.menuPoints {
     align-self: flex-end;
     filter: invert();
     margin-right: 8%;
 }
-.DescriptiveMobile img {
+.descriptiveMobile img {
     border-radius: 0% 0% 30% 30%;
     width: 100%;
 }
-.DescriptiveTablet img {
+.descriptiveTablet img {
     display: none;
 }
-.NetworksMobileTop {
+.networks {
     display: none;
 }
 .gigatech {
     text-align: end;
     font-size: 80%;
     margin-bottom: 2%;
+    padding-right: 5%;
 }
 @media screen and (min-width:480px) {
-    .NetworksMobileTop {
-        display: flex;
-        justify-content: end;
-        margin-right: 20px;
-        margin-top: 20px;
-    }
     header {
         width: 100%;
         height: 150px;
     }
-    .MenuPoints {
+    .menuPoints {
         align-self: flex-start;
         margin-left: 5%;
     }
-    .DescriptiveMobile {
+    .networks {
+        display: flex;
+        position: absolute;
+        align-self: flex-end;
+        margin-top: 8px;
+    }
+    .linkedin {
+        margin-right: 10px;
+    }
+    .instagram {
+        margin-right: 10px;
+    }
+    .facebook {
+        margin-right: 10px;
+    }
+    .twitter {
+        margin-right: 10px;
+    }
+    .descriptiveMobile {
         display: none;
     }
-    .DescriptiveTablet {
-        position: relative;
+    .descriptiveTablet {
+        display: flex;
         margin-top: 30px;
     }
-    .DescriptiveTablet img {
+    .descriptiveTablet img {
         border-radius: 0 60px 60px 0;
         width: 80%;
         display: block;
@@ -68,9 +82,8 @@ header h1 {
         padding-right: 25px;
         background-color: white;
     }
-
 }
- @media screen and (min-width 1024px) {
+ @media screen and (min-width:1024px) {
 header {
 }
 }
