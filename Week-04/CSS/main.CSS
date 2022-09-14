@@ -52,25 +52,22 @@ main {
 .greenSquares {
     display: flex;
     padding: 20px;
-    flex-flow: row wrap;
-    justify-content: center;
+    flex-direction: row;
     align-items: center;
-    width: 80%;
-    height: 400px;
+    width: 300px;
+    height: 300px;
     margin: 0 auto;
     margin-top: 10%;
-    align-content: space-around;
 }
 .item {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     text-align: center;
-    width: 140px;
-    height: 140px;
+    width: 150px;
+    height: 150px;
     background-color: #AACE9B;
     border-radius: 10%;
     align-items: justify;
-    display: inline-block;
     font-weight: bold;
     margin: 10px;
 }
@@ -129,11 +126,12 @@ input[type=submit] {
     font-size: 120%;
     align-self: justify;
 }
-.sistems {
+.systems {
     margin-left: 20%;
 }
 .extrasContainers {
     display: flex;
+    flex-direction: row;
     padding: 10px ;
     font-weight: bold;
     line-height: 1.7;
@@ -164,7 +162,6 @@ input[type=submit] {
 .contactUs img {
     max-width: 25px;
     filter: invert();
-    
 }
 @media screen and (min-width:480px) {
     .keepTrack {
@@ -238,165 +235,185 @@ input[type=submit] {
         vertical-align: middle;
     }
  }
- @media screen and (min-width:1024px) {
-    aside {
+@media screen and (min-width:1024px) {
+    main {
+        grid-area: 1 / 2 / 6 / 6;
+        display: flex;
+        width: 100%;
+        display: grid;
     }
-    header {
+    .keeptrack {
+        font-weight: bold;
+        width: 300px;
+        font-size: 40px;
+        color: #AACE9B;
+        position: absolute;
+        top: 80px;
+        left: 20px;
     }
-    main { 
+    .ourhr {
+        width: 410px;
+        right: 0;
+        top: 320px;
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 170%;
+        text-align: right;
+        letter-spacing: 0.125em;
+        color: #373867;
+        background-color: #AACE9B;
+        opacity: 80%;
+        border-radius: 5% 0% 0% 5%;
+        padding: 20px;
+        box-sizing: border-box;
     }
-    footer {
+    .whytrackgenix {
+        width: 429px;
+        right: 200px;
+        height: 77px;
+        font-size: 48px;
+        text-align: center;
+        color: #000000;
+        margin-top: 40px;
+    }
+    .weseek {
+        padding: 5%;
+        padding-top: 0%;
+        width: 367px;
+        left: 422px;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 170%;
+        color: #373867;
+    }
+    .doingyourbusiness {
+        padding-left: 70px;
+        margin: 35px;
+        top: 70%;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 36px;
+        color: #373867;
+    }
+    .infocirclefather {
+        right: 150px;
+        top: 100px;
+    }
+    .infocircle {
+        display: table;
+        background-color: #373867;
+        width: 150px;
+        height: 150px;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 20px;
+        text-align: center;
+        color: #AACE9B;
+        border: 10px solid #707070;
+        border-radius: 50%;
+    }
+    .infocircle.alt {
+        transform: translateX(-100px);
+    }
+    .infocircle h3 {
+        display: table-cell;
+        vertical-align: middle;
+    }
+    .greenSquares {
+        flex-direction: row;
+        width: 100%;
+    }
+    .item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 25%;
+        height: 150px;
+        background-color: #AACE9B;
+        border-radius: 10%;
+        text-align: center;
+        vertical-align: middle;
+        font-weight: bold;
+        margin: 30px;
+    }
+    .whitebackground {
+        background-color: white;
+        padding-top: 100px;
+    }
+    .howgigatech {
+        background-color: #D9D9D9;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 35px;
+        text-align: center;
+        color: #373867;
+        margin: 5px 250px 60px;
+        padding: 20px;
+    }
+    .in2021 {
+        text-align: left;
+        font-weight: 400;
+        font-size: 20px;
+        display: block;
+        padding: 20px;
+    }
+    fieldset {
+        width: 320px;
+        display: grid;
+        border-radius: 5px;
+    }
+    .requestinfo{
+        font-size: 25px;
+        margin: 20px;
+    }
+    input, select, textarea {
+        padding: 12px 30px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    input[type=text],input[type=email] {
+        max-width: 310px;
+    }
+    input[type=submit] {
+        width: 100%;
+        background-color:#AACE9B;
+        padding: 20px 50px;
+        margin: 8px 0;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    fieldset label {
+        margin: 10px;
+        margin-left: 0px;
+    }
+    fieldset h2 {
+        font-weight: bold;
+        text-align: center;
+    }
+    .contactarea {
+        margin: 30px 0 30px;
+    }
+    .extrasContainers {
+        padding: 30px ;
+        font-weight: bold;
+        padding-left: 140px;
+        line-height: 1.7;
+    }
+    .extrasContainers > ul {
+        justify-content: space-around;
+        flex-direction: row;
+        display: flex;
+    }
+    .item2 {
+        display: inline-block;
+    }
+    .item2 ul {
+        list-style: decimal;
+    }
+    .item2 a {
+        color: #000000;
+        text-decoration: none;
     }
  }
-
-
-
-
-/* .GreenSquares {
-    margin: 50px;
-    border: solid;
-}
-.item {
-    width: 100px;
-    height: 80px;
-    background-color: #AACE9B;
-    border-radius: 10%;
-    text-align: center;
-    vertical-align: middle;
-    padding: 30px;
-    padding-top: 60px;
-    font-weight: bold;
-    margin: 10px;
-} */
-/* .graybackground {
-    background-color: #D9D9D9;
-}
-
-.gigatech {
-    top: 120px;
-    right: 465px;
-    font-weight: bolder;
-    font-size: 18px;
-}
-.ourhr {
-    width: 410px;
-    right: 0;
-    top: 320px;
-    font-weight: 80px;
-    font-size: 24px;
-    line-height: 170%;
-    text-align: right;
-    letter-spacing: 0.125em;
-    color: #373867;
-    background-color: #AACE9B;
-    opacity: 80%;
-    border-radius: 5% 0% 0% 5%;
-    padding: 20px;
-    box-sizing: border-box;
-}
-.whytrackgenix {
-    width: 629px;
-    right: 200px;
-    height: 77px;
-    font-size: 48px;
-    text-align: center;
-    color: #000000;
-    margin-top: 40px;
-}
-.weseek {
-    padding: 5%;
-    padding-top: 0%;
-    width: 567px;
-    left: 422px;
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 170%;
-    color: #373867;
-}
-.doingyourbusiness {
-    padding-left: 70px;
-    margin: 35px;
-    top: 70%;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 36px;
-    color: #373867;
-}
-.infocirclefather {
-    right: 150px;
-    top: 100px;
-}
-.infocircle {
-    background-color: #373867;
-    width: 150px;
-    height: 150px;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 20px;
-    text-align: center;
-    color: #AACE9B;
-    border: 10px solid #707070;
-    border-radius: 50%;
-}
-.infocircle.alt {
-    transform: translateX(-100px);
-}
-.infocircle h3 {
-    vertical-align: middle; */
-}
-/* .greensquares {
-    margin: 50px;
-}
-.item {
-    width: 150px;
-    height: 120px;
-    background-color: #AACE9B;
-    border-radius: 10%;
-    text-align: center;
-    vertical-align: middle;
-    padding: 30px;
-    padding-top: 60px;
-    font-weight: bold;
-    margin: 30px;
-}
-.whitebackground {
-    background-color: white;
-    padding-top: 100px;
-}
-.howgigatech {
-    background-color: #D9D9D9;
-    font-weight: bold;
-    font-size: 30px;
-    line-height: 35px;
-    text-align: center;
-    color: #373867;
-    margin: 5px 250px 60px;
-    padding: 20px;
-}
-.in2021 {
-    text-align: left;
-    font-weight: 400;
-    font-size: 20px;
-    padding: 20px;
-}
-.requestinfotable h2 {
-    font-size: 25px;
-    margin: 20px;
-}
-.requestinfotable {
-    margin-top: 300px;
-    margin-left: 200px;
-    width: 420px;
-    display: grid;
-    padding: 50px 90px;
-    margin: 40px 250px;
-    border-radius: 5px;
-}
-fieldset h2 {
-    font-weight: bold;
-    text-align: center;
-}
-.contactarea {
-    margin: 30px 0 30px;
-}*/

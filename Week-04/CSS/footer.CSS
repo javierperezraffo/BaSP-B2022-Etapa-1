@@ -8,7 +8,14 @@ footer {
 }
 footer p {
     padding: 3%;
-    margin: %;
     color: white;
     font-size: 80%;
+}
+@media screen and (min-width:1024px) {
+    footer {
+        margin-top: 0 !important;
+        text-align: center;
+        padding: 50px;
+        background-color: #373867;
+    }
 }

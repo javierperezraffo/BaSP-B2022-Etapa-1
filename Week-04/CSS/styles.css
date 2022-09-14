@@ -15,12 +15,14 @@ body {
     }
 }
  @media screen and (min-width:1024px) {
-    aside {
+    * {
+        box-sizing: border-box !important;
     }
-    header {
-    }
-    main { 
-    }
-    footer {
+    .mainContainer {
+        display: grid;
+        grid-template-columns: 300px 1fr;
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
     }
  }
