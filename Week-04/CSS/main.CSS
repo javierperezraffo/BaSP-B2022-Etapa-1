@@ -28,7 +28,7 @@ main {
     align-self: center;
     color: white;
 }
-.whyTrackgenix {
+.infoContainer h2 {
     font-size: 40px;
     text-align: center;
     margin: 20px;
@@ -41,7 +41,7 @@ main {
     margin-right: 45px;
     line-height: 1,5;
 }
-.doingYourBusiness {
+.infoContainer h3 {
     font-size: 20px;
     text-align: center;
     top: 5px;
@@ -52,22 +52,24 @@ main {
 .greenSquares {
     display: flex;
     padding: 20px;
-    flex-direction: row;
+    flex-flow: row wrap;
+    justify-content: center;
     align-items: center;
-    width: 300px;
-    height: 300px;
+    width: 80%;
+    height: 400px;
     margin: 0 auto;
     margin-top: 10%;
+    align-content: space-around;
 }
 .item {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     text-align: center;
-    width: 150px;
-    height: 150px;
+    width: 140px;
+    height: 140px;
     background-color: #AACE9B;
     border-radius: 10%;
-    align-items: justify;
+    display: inline-block;
     font-weight: bold;
     margin: 10px;
 }
