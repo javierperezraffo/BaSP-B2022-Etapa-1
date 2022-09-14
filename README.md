@@ -11,6 +11,7 @@
     - In the styles.CSS we can visualize all the styles used for the landing.
     - The reset.CSS file serves us for the reset of the display function for older browsers.
     Week 04:
+    - This week we implemented the flexbox system and separated the CSS styles into header, aside, main footer and styles.
 
 Here you will find clearly explained what our new human resources management software is all about, with countless advantages for effective and intelligent management. We have agents who can guide you to find the customized product that best suits your level of management and with follow-up to continue fine-tuning details over time, accompanying the growth of your company.
 
