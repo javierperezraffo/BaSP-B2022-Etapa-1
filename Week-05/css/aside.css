@@ -1,0 +1,55 @@
+aside {
+    display: none;
+}
+@media screen and (min-width:1024px) {
+    .aside {
+        grid-area: 1 / 1 / 6 / 2;
+        width: 100% !important;
+        display: flex;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 100%;
+        height: 100%;
+        color: #FFFFFF;
+        background-color: #707070;
+    }
+    .search {
+        align-items: center;
+        margin: 20px auto;
+        margin-bottom: 80px;
+    }
+    .sidebar .icon {
+        margin-right: 10px;
+        max-width: 35px;
+    }
+    .sidebar .link {
+        display: block;
+        text-decoration: none;
+        font-weight: bold;
+        color: white;
+        margin: 30px;
+    }
+    .sidebarsubmenu {
+        margin: 40px 90px;
+    }
+    .sidebarfooter {
+        position: absolute;
+        bottom: 68px;
+        left: 18px;
+    }
+    .sidebarfooter h3 {
+        font-size: 2em;
+        margin: 20px;
+        color: #000000;
+    }
+    .sidebarfooter h4 {
+        display: inline;
+        color: #000000;
+        font-size: 14px;
+    }
+    .sidebarfooter img {
+        display: inline;
+        max-width: 28px;
+    }
+}
