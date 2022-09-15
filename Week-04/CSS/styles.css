@@ -3,17 +3,7 @@ body {
     flex-direction: column;
     font-family: 'Roboto', sans-serif;
 }
- @media screen and (min-width:480px) {
-    aside {
-    }
-    header {
-    }
-    main { 
-    }
-    footer {
-    }
-}
- @media screen and (min-width:1024px) {
+@media screen and (min-width:1024px) {
     * {
         box-sizing: border-box !important;
     }
