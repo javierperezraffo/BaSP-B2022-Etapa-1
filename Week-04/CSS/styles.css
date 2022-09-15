@@ -3,7 +3,6 @@ body {
     flex-direction: column;
     font-family: 'Roboto', sans-serif;
 }
-
  @media screen and (min-width:480px) {
     aside {
     }
