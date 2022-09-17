@@ -51,20 +51,26 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 400px;
-    height: 400px;
+    max-width: 100%;
+}
+.greenSquaresContainer {
+    border: solid;
+    max-width: 600px;
+    display: flex;
+    justify-content: space-between;
+    
 }
 .item1,
 .item2,
 .item3,
 .item4 {
     display: flex;
+    display: inline-block;
     text-align: center;
     width: 140px;
     height: 140px;
     background-color: #AACE9B;
     border-radius: 10%;
-    display: inline-block;
     font-weight: bold;
     margin: 10px;
 }
