@@ -21,7 +21,7 @@ main {
     padding: 20px;
     box-sizing: border-box;
     justify-content: center;
-    margin: 10% 8%;
+    margin: 8% 8%;
 }
 .infoContainer {
     display: flex;
@@ -30,13 +30,11 @@ main {
 .infoContainer h2 {
     font-weight: bold;
     font-size: 35px;
-    margin: 20px;
     text-align: center;
 }
 .infoContainer p {
     font-size: 16px;
     text-align: left;
-    margin: 10px;
     margin-left: 45px;
     margin-right: 45px;
     line-height: 1,5;
@@ -51,14 +49,15 @@ main {
 }
 .greenSquares {
     display: flex;
-    align-self: center;
-    flex-flow: row wrap;
     justify-content: center;
     align-items: center;
     width: 400px;
     height: 400px;
 }
-.item {
+.item1,
+.item2,
+.item3,
+.item4 {
     display: flex;
     text-align: center;
     width: 140px;
@@ -131,7 +130,6 @@ input[type=submit] {
 .extrasContainers {
     display: flex;
     flex-direction: row;
-    margin-left: 2%;
     margin-bottom: 60px;
     padding: 10px ;
     font-weight: bold;
@@ -143,7 +141,7 @@ input[type=submit] {
     margin-left: 18px;
     margin-top: 7px;
 }
-.item2 a {
+.itemA a {
     color: #000000;
     text-decoration: none;
 }
@@ -240,7 +238,9 @@ input[type=submit] {
         padding-left: 7px;
     }
     .greenSquares {
+        border: solid;
         background-color: white;
+        width: 100%;
     }
     .flexContainer {
         display: flex;
