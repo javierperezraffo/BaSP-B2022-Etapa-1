@@ -13,23 +13,23 @@
 // a
 var fiveWords = ['house', 'plants', 'water', 'mouse', 'tree'];
 console.log('a:', fiveWords);
-for (word of fiveWords) {
+    for (word of fiveWords) {
     alert(word);
 }
 // b
-for (var i = 0; i < fiveWords.length; i++) {
+    for (var i = 0; i < fiveWords.length; i++) {
 fiveWords[i] = fiveWords[i].substring(0, 1).toUpperCase() + fiveWords[i].substring(1);
 };
 console.log('b:', fiveWords);
 // c
 var sentence = '';
-for (word of fiveWords) {
+    for (word of fiveWords) {
 sentence += ' ' + word;
 }
 console.log('c:', sentence);
 // d
 var newArray = [];
-for (var i = 0; i < 10; i++) {
+    for (var i = 0; i < 10; i++) {
 newArray.push(i);
 }
 console.log('d:', newArray);
