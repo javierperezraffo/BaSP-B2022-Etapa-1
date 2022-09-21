@@ -241,7 +241,6 @@ input[type=submit] {
         padding-left: 7px;
     }
     .greenSquares {
-        border: solid;
         background-color: white;
         width: 100%;
     }
@@ -315,8 +314,7 @@ input[type=submit] {
     .greenSquares {
         display: flex;
         width: 100%;
-        justify-content: space-between;
-
+        justify-content: center;
     }
     .item {
         padding-top: 10px;
