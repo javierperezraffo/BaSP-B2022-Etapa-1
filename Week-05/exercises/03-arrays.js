@@ -8,39 +8,39 @@
     //f. Unir todos los elementos del array en un único string donde cada mes este separado por un 
     //guión - (utilizar//join).
     //g. Crear una copia del array de meses que contenga desde Mayo hasta Noviembre (utilizar slice).
-    // a
-    var monthsA = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre",
-     "Noviembre", "Diciembre"];
-    console.log(monthsA[4], monthsA[10]);
-    // b
-    var monthsB = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre",
-     "Noviembre", "Diciembre"];
-    monthsB.sort();
-    console.log(monthsB);
-    // c
-    var monthsC = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre",
-     "Noviembre", "Diciembre"];
-    monthsC.unshift('Start');
-    monthsC.push('End');
-    console.log(monthsC);
-    // d
-    var monthsD = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre",
-     "Noviembre", "Diciembre"];
-    monthsD.shift();
-    monthsD.pop();
-    console.log(monthsD);
-    // e
-    var monthsE = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre",
-     "Noviembre", "Diciembre"];
-    monthsE.reverse();
-    console.log(monthsE);
-    // f
-    var monthsF = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre",
-     "Noviembre", "Diciembre"];
-    var allMonths = monthsF.join('-');
-    console.log(allMonths);
-    // g
-    var monthsG = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre",
-     "Noviembre", "Diciembre"];
-    var slicedMonths = monthsG.slice(4, 11);
-    console.log(slicedMonths);
+// a
+var monthsA = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre",
+    "Noviembre", "Diciembre"];
+console.log(monthsA[4], monthsA[10]);
+// b
+var monthsB = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre",
+    "Noviembre", "Diciembre"];
+monthsB.sort();
+console.log(monthsB);
+// c
+var monthsC = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre",
+    "Noviembre", "Diciembre"];
+monthsC.unshift('Start');
+monthsC.push('End');
+console.log(monthsC);
+// d
+var monthsD = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre",
+    "Noviembre", "Diciembre"];
+monthsD.shift();
+monthsD.pop();
+console.log(monthsD);
+// e
+var monthsE = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre",
+    "Noviembre", "Diciembre"];
+monthsE.reverse();
+console.log(monthsE);
+// f
+var monthsF = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre",
+    "Noviembre", "Diciembre"];
+var allMonths = monthsF.join('-');
+console.log(allMonths);
+// g
+var monthsG = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre",
+    "Noviembre", "Diciembre"];
+var slicedMonths = monthsG.slice(4, 11);
+console.log(slicedMonths);
