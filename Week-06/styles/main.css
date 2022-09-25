@@ -303,7 +303,9 @@ input[type=submit],
         right: 100px;
     }
     .infoCircle {
-        display: table;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 150px;
         height: 150px;
     }
@@ -311,8 +313,8 @@ input[type=submit],
         transform: translateX(-70px);
     }
     .infoCircle h3 {
-        display: table-cell;
-        vertical-align: middle;
+        padding: 0;
+        height: auto;
     }
     .greenSquares {
         display: flex;
