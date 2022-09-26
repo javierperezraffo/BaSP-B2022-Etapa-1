@@ -1,0 +1,14 @@
+.messageError {
+    display: none;
+    color: brown;
+    font-size: 0.85em;
+}
+.inputError {
+    border: 1px solid brown !important;
+}
+.inputError + .messageError {
+    display: block;
+}
+.requestInfoTable button {
+    margin-top: 30px;
+}
