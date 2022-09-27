@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Reduce costs in the company, manage personnel with customized software">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../styles/reset.css">
+        <link rel="stylesheet" href="../styles/styles.css">
+        <link rel="stylesheet" href="../styles/header.css">
+        <link rel="stylesheet" href="../styles/main.css">
+        <link rel="stylesheet" href="../styles/aside.css">
+        <link rel="stylesheet" href="../styles/footer.css">
+        <link rel="stylesheet" href="../styles/sign-up.css">
+        <title>Employee Signup - Trackgenix</title>
+    </head>
+    <body>
+        <div class="mainContainer">
+            <aside class="aside">
+                <div>
+                    <input class="search" type="search" id="search" name="search" placeholder="Search...">
+                    <ul>
+                        <li>
+                            <a href="../index.html" class="link">
+                                <img src="../assets/HomeIcon.png" alt="img" class="icon">
+                                <span>
+                                    Home
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/Week-06/views/sign-up.html" class="link">
+                                <img src="../assets/PersonIcon.png" alt="img" class="icon">
+                                <span>
+                                    Sign up
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./login.html" class="link">
+                                <img src="../assets/2PersonIcon.png" alt="img" class="icon">
+                                <span>
+                                    Log in
+                                </span>
+                            </a>
+                        </li>
+                        <li class="asideSubmenu">
+                            <p>Submenu</p>
+                            <ol>
+                                <li>Placeholder</li>
+                                <li>Placeholder</li>
+                                <li>Placeholder</li>
+                            </ol>
+                        </li>
+                    </ul>
+               </div>
+                <section class="asideContact">
+                    <h3>Contact us</h3>
+                    <section>
+                        <img src="../assets/MailIcon.png" alt="mailicon.png">
+                        <h4>sampletext@gmail.com</h4>
+                    </section>
+                    <section>
+                        <img src="../assets/BuildingIcon.png" alt="buildingIcon.png">
+                        <h4>Av. 18 de Julio 5555, Montevideo, Uruguay</h4>
+                    </section>
+                </section>
+            </aside>
+            <div>
+                <header>
+                    <a class="menuPoints" href="MenuPoints">
+                        <img src="../assets/MenuPoints.png" alt="MenuPoints">
+                    </a>
+                    <section class="descriptiveMobile">
+                        <img src="../assets/descriptive-image.jpg" alt="DescriptiveMobile.jpg">
+                    </section>
+                    <section>
+                        <h1>Trackgenix</h1>
+                        <p class="gigatech">
+                            By GigaTech Sofware Solution
+                        </p>
+                    </section>
+                    <section class="networks">
+                        <a class="linkedin" href="https://www.linkedin.com/" target="_blank">
+                            <img src="../assets/LinkedInIcon.png"  alt="LinkedIn"/>
+                        </a>
+                        <a class="instagram" href="https://www.instagram.com/" target="_blank">
+                            <img src="../assets/InstagramIcon.png"  alt="Instagram"/>
+                        </a>
+                        <a class="facebook" href="https://www.facebook.com/" target="_blank">
+                            <img src="../assets/FacebookIcon.png"  alt="Facebook"/>
+                        </a>
+                        <a class="twitter" href="https://twitter.com/" target="_blank">
+                            <img src="../assets/Twittericon.png"  alt="Twitter"/>
+                        </a>
+                    </section>
+                </header>
+                    <section class="whiteBackground">
+                        <div class="flexContainer" >
+                            <section class="requestInfoTable">
+                                <form >
+                                    <h2>Employee Sign Up</h2>
+                                    <div class="requestInfoInputs">
+                                        <div class="infoInputsColumnLeft">
+                                            <fieldset>
+                                                <label for="name">Name:</label>
+                                                <input type="text" id="name" name="name" placeholder="Enter your name">
+                                                <span class="messageError">Name must have more than 3 letters</span>
+                                            </fieldset>
+                                            <fieldset>
+                                                <label for="lastname">Lastname:</label>
+                                                <input type="text" id="lastname" name="lastname" placeholder="Enter your lastname">
+                                                <span class="messageError">Lastname must have more than 3 letters</span>
+                                            </fieldset>
+                                            <fieldset>
+                                                <label for="dni">DNI:</label>
+                                                <input type="number" id="dni" name="dni" placeholder="Enter your DNI">
+                                                <span class="messageError">DNI is not valid</span>
+                                            </fieldset>
+                                            <fieldset>
+                                                <label for="birthdate">Birth date:</label>
+                                                <input type="date" id="birthdate" name="birthdate" placeholder="Enter your birth date">
+                                                <span class="messageError">Birth date is not valid</span>
+                                            </fieldset>
+                                            <fieldset>
+                                                <label for="telephone">Telephone:</label>
+                                                <input type="number" id="telephone" name="telephone" placeholder="Enter your telephone">
+                                                <span class="messageError">Telphone must have 10 digits</span>
+                                            </fieldset>
+                                        </div>
+                                        <div class="infoInputsColumnRight">
+                                            <fieldset>
+                                                <label for="address">Address:</label>
+                                                <input type="text" id="address" name="address" placeholder="Enter your address">
+                                                <span class="messageError">Address must have at least 5 characters long and contain letters and numbers</span>
+                                            </fieldset>
+                                            <fieldset>
+                                                <label for="city">City:</label>
+                                                <input type="text" id="city" name="city" placeholder="Enter your city">
+                                                <span class="messageError">City must have more that 3 letters</span>
+                                            </fieldset>
+                                            <fieldset>
+                                                <label for="postalCode">Postal code:</label>
+                                                <input type="number" id="postalCode" name="postalCode" placeholder="Enter your postal code">
+                                                <span class="messageError">Postal code must have 4 or 5 digits</span>
+                                            </fieldset>
+                                            <fieldset>
+                                                <label for="email">Email:</label>
+                                                <input type="email" id="email" name="email" placeholder="Enter your email">
+                                                <span class="messageError">Email is not valid</span>
+                                            </fieldset>
+                                            <fieldset>
+                                                <label for="password">Password:</label>
+                                                <input type="password" id="password" name="password" placeholder="Enter your password">
+                                                <span class="messageError">Password must have letters, numbers, and a least 8 characters long</span>
+                                            </fieldset>
+                                            <fieldset>
+                                                <label for="passwordRepeat">Repeat your password:</label>
+                                                <input type="password" id="passwordRepeat" name="passwordRepeat" placeholder="Repeat your password">
+                                                <span class="messageError">Password does not match</span>
+                                            </fieldset>
+                                        </div>
+                                    </div>
+                                    <button id="create">Create</button>
+                                </form>
+                            </section>
+                        </div>
+                        <section class="contactUs">
+                            <h3>Contact us</h3>
+                            <section>
+                                <img src="../assets/MailIcon.png" alt="mailicon.png">
+                                <h4>sampletext@gmail.com</h4>
+                            </section>
+                            <section>
+                                <img src="../assets/BuildingIcon.png" alt="buildingIcon.png">
+                                <h4>Av. 18 de Julio 5555, Montevideo, Uruguay</h4>
+                            </section>
+                        </section>
+                    </section>
+                </main>
+            </div>
+        </div>
+        <footer>
+            <div class="networksMobile">
+                <a href="https://www.linkedin.com/" target="_blank">
+                    <img src="../assets/LinkedInIcon.png"  alt="LinkedIn"/>
+                </a>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <img src="../assets/InstagramIcon.png"  alt="Instagram"/>
+                </a>
+                <a href="https://www.facebook.com/" target="_blank">
+                    <img src="../assets/FacebookIcon.png"  alt="Facebook"/>
+                </a>
+                <a href="https://twitter.com/" target="_blank">
+                    <img src="../assets/Twittericon.png"  alt="Twitter"/>
+                </a>
+            </div>
+            <p>
+                Copyright © 2022 GigaTech Software Solutions. All rights reserved.
+            </p>
+        </footer>
+    </body>
+</html>
