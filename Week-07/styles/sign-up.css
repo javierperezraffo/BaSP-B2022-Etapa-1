@@ -1,0 +1,36 @@
+.messageError {
+    display: none;
+    color: brown;
+    font-size: 0.85em;
+    line-height: 1.5;
+}
+.inputError {
+    border: 1px solid brown !important;
+}
+.inputError + .messageError {
+    display: block;
+}
+.requestInfoTable {
+    margin: 5% auto;
+    width: 80vw;
+    max-width: 500px;
+}
+.requestInfoTable button {
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.requestInfoInputs {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.requestInfoInputs .infoInputsColumnLeft,
+.requestInfoInputs .infoInputsColumnRight {
+    flex-basis: 50%;
+}
+@media screen and (min-width: 480px) {
+    .requestInfoInputs {
+        flex-direction: row;
+    }
+}
