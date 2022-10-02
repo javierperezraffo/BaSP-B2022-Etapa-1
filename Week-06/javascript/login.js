@@ -52,5 +52,4 @@ document.addEventListener('DOMContentLoaded', function() {
             alert('Cannot log in: ' + errors.join(', '));
         }
     });
-
 });
