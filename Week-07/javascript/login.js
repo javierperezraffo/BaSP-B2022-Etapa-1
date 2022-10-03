@@ -1,11 +1,11 @@
-document.addEventListener('load', function() {
+document.addEventListener('DOMContentLoaded', function () {
 
     var inputEmail = document.getElementById('email');
     var inputPassword = document.getElementById('password');
 
     function validateEmail() {
         var email = inputEmail.value.trim();
-        var regex = /^[^@]+@[^@]+\.[a-zA-Z]{2,}$/;;
+        var regex = /\S+@\S+\.\S+/;
         var valid = regex.test(email);
 
         if (valid == true) {
@@ -29,19 +29,19 @@ document.addEventListener('load', function() {
         return valid;
     }
 
-    inputEmail.addEventListener('blur', function() {
+    inputEmail.addEventListener('blur', function () {
         validateEmail();
     });
 
-    inputPassword.addEventListener('blur', function() {
+    inputPassword.addEventListener('blur', function () {
         validatePassword();
     })
 
-    inputEmail.addEventListener('focus', function() {
+    inputEmail.addEventListener('focus', function () {
         inputEmail.classList.remove('inputError');
     });
 
-    inputPassword.addEventListener('focus', function() {
+    inputPassword.addEventListener('focus', function () {
         inputPassword.classList.remove('inputError');
     });
 
@@ -56,12 +56,12 @@ document.addEventListener('load', function() {
                 if (data.success == true) {
                     alert('Request was successful!: ' + data.msg);
                 } else {
-                    alert('Credentials are invalid: ' + data.msg);
+                    alert('There was an error: ' + data.msg);
                 }
             });
     }
 
-    document.getElementById('login').addEventListener('click', function(event) {
+    document.getElementById('login').addEventListener('click', function (event) {
         event.preventDefault();
 
         var validEmail = validateEmail(inputEmail);

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,6 +19,7 @@
     <title>Employee Signup - Trackgenix</title>
     <script src="../javascript/sign-up.js"></script>
 </head>
+
 <body>
     <div class="mainContainer">
         <aside class="aside">
@@ -25,7 +27,7 @@
                 <input class="search" type="search" id="search" name="search" placeholder="Search...">
                 <ul>
                     <li>
-                        <a href="../views/index.html" class="link">
+                        <a href="./index.html" class="link">
                             <img src="../assets/HomeIcon.png" alt="img" class="icon">
                             <span>
                                 Home
@@ -33,7 +35,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="../views/sign-up.html" class="link">
+                        <a href="./sign-up.html" class="link">
                             <img src="../assets/PersonIcon.png" alt="img" class="icon">
                             <span>
                                 Sign up
@@ -41,7 +43,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="../views/login.html" class="link">
+                        <a href="./login.html" class="link">
                             <img src="../assets/2PersonIcon.png" alt="img" class="icon">
                             <span>
                                 Log in
@@ -99,65 +101,80 @@
                     </a>
                 </section>
             </header>
+
             <section class="whiteBackground">
                 <div class="flexContainer">
+
                     <section class="requestInfoTable">
                         <form>
                             <h2>Employee Sign Up</h2>
+
                             <div class="requestInfoInputs">
+
                                 <div class="infoInputsColumnLeft">
+
                                     <fieldset>
                                         <label for="name">Name:</label>
                                         <input type="text" id="name" name="name" placeholder="Enter your name">
                                         <span class="messageError">Name must have more than 3 letters</span>
                                     </fieldset>
+
                                     <fieldset>
                                         <label for="lastname">Lastname:</label>
                                         <input type="text" id="lastname" name="lastname"
                                             placeholder="Enter your lastname">
                                         <span class="messageError">Lastname must have more than 3 letters</span>
                                     </fieldset>
+
                                     <fieldset>
                                         <label for="dni">DNI:</label>
                                         <input type="text" id="dni" name="dni" placeholder="Enter your DNI">
                                         <span class="messageError">DNI is not valid</span>
                                     </fieldset>
+
                                     <fieldset>
                                         <label for="birthdate">Birth date:</label>
                                         <input type="text" id="birthdate" name="birthdate"
                                             placeholder="Enter your birth date">
                                         <span class="messageError">Birth date is not valid</span>
                                     </fieldset>
+
                                     <fieldset>
                                         <label for="telephone">Telephone:</label>
                                         <input type="text" id="telephone" name="telephone"
                                             placeholder="Enter your telephone">
                                         <span class="messageError">Telphone must have 10 digits</span>
                                     </fieldset>
+
                                 </div>
                                 <div class="infoInputsColumnRight">
+
                                     <fieldset>
                                         <label for="address">Address:</label>
                                         <input type="text" id="address" name="address" placeholder="Enter your address">
                                         <span class="messageError">Address must have at least 5 characters long and
                                             contain letters and numbers</span>
                                     </fieldset>
+
                                     <fieldset>
                                         <label for="city">City:</label>
                                         <input type="text" id="city" name="city" placeholder="Enter your city">
                                         <span class="messageError">City must have more that 3 letters</span>
                                     </fieldset>
+
                                     <fieldset>
                                         <label for="postalCode">Postal code:</label>
                                         <input type="text" id="postalCode" name="postalCode"
                                             placeholder="Enter your postal code">
                                         <span class="messageError">Postal code must have 4 or 5 digits</span>
                                     </fieldset>
+
                                     <fieldset>
                                         <label for="email">Email:</label>
                                         <input type="text" id="email" name="email" placeholder="Enter your email">
                                         <span class="messageError">Email is not valid</span>
                                     </fieldset>
+
                                     <fieldset>
                                         <label for="password">Password:</label>
                                         <input type="password" id="password" name="password"
@@ -165,18 +182,22 @@
                                         <span class="messageError">Password must have letters, numbers, and a least 8
                                             characters long</span>
                                     </fieldset>
+
                                     <fieldset>
                                         <label for="passwordRepeat">Repeat your password:</label>
                                         <input type="password" id="passwordRepeat" name="passwordRepeat"
                                             placeholder="Repeat your password">
                                         <span class="messageError">Password does not match</span>
                                     </fieldset>
+
                                 </div>
                             </div>
+
                             <button id="create">Create</button>
                         </form>
                     </section>
                 </div>
+
                 <section class="contactUs">
                     <h3>Contact us</h3>
                     <section>
@@ -212,4 +233,5 @@
         </p>
     </footer>
 </body>
+
 </html>

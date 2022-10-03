@@ -1,4 +1,4 @@
-document.addEventListener('load', function() {
+document.addEventListener('DOMContentLoaded', function () {
 
     var inputName = document.getElementById('name');
     var inputLastname = document.getElementById('lastname');
@@ -11,7 +11,6 @@ document.addEventListener('load', function() {
     var inputEmail = document.getElementById('email');
     var inputPassword = document.getElementById('password');
     var inputPasswordRepeat = document.getElementById('passwordRepeat');
-
 
     function validateName() {
         var name = inputName.value.trim();
@@ -41,7 +40,7 @@ document.addEventListener('load', function() {
 
     function validateDNI() {
         var dni = inputDNI.value.trim();
-        var regex = /(\d+)/g
+        var regex = /(\d+)/g;
         var valid = dni.length > 7 && regex.test(dni);
 
         if (valid == true) {
@@ -66,7 +65,7 @@ document.addEventListener('load', function() {
 
     function validateTelephone() {
         var telephone = inputTelephone.value.trim();
-        var regex = /(\d+)/g
+        var regex = /(\d+)/g;
         var valid = telephone.length == 10 && regex.test(telephone);
 
         if (valid == true) {
@@ -119,7 +118,7 @@ document.addEventListener('load', function() {
 
     function validateEmail() {
         var email = inputEmail.value.trim();
-        var regex = /^[^@]+@[^@]+\.[a-zA-Z]{2,}$/;;
+        var regex = /\S+@\S+\.\S+/;
         var valid = regex.test(email);
 
         if (valid == true) {
@@ -155,94 +154,92 @@ document.addEventListener('load', function() {
         return valid;
     }
 
-
-
-    inputName.addEventListener('blur', function() {
+    inputName.addEventListener('blur', function () {
         validateName();
     });
 
-    inputLastname.addEventListener('blur', function() {
+    inputLastname.addEventListener('blur', function () {
         validateLastname();
     });
 
-    inputDNI.addEventListener('blur', function() {
+    inputDNI.addEventListener('blur', function () {
         validateDNI();
     });
 
-    inputBirthdate.addEventListener('blur', function() {
+    inputBirthdate.addEventListener('blur', function () {
         validateBirthdate();
     });
 
-    inputTelephone.addEventListener('blur', function() {
+    inputTelephone.addEventListener('blur', function () {
         validateTelephone();
     });
 
-    inputAddress.addEventListener('blur', function() {
+    inputAddress.addEventListener('blur', function () {
         validateAddress();
     });
 
-    inputCity.addEventListener('blur', function() {
+    inputCity.addEventListener('blur', function () {
         validateCity();
     });
 
-    inputPostalCode.addEventListener('blur', function() {
+    inputPostalCode.addEventListener('blur', function () {
         validatePostalCode();
     });
 
-    inputEmail.addEventListener('blur', function() {
+    inputEmail.addEventListener('blur', function () {
         validateEmail();
     });
 
-    inputPassword.addEventListener('blur', function() {
+    inputPassword.addEventListener('blur', function () {
         validatePassword();
     });
 
-    inputPasswordRepeat.addEventListener('blur', function() {
+    inputPasswordRepeat.addEventListener('blur', function () {
         validatePasswordRepeat();
     });
 
 
-    inputName.addEventListener('focus', function() {
+    inputName.addEventListener('focus', function () {
         inputName.classList.remove('inputError');
     });
 
-    inputLastname.addEventListener('focus', function() {
+    inputLastname.addEventListener('focus', function () {
         inputLastname.classList.remove('inputError');
     });
 
-    inputDNI.addEventListener('focus', function() {
+    inputDNI.addEventListener('focus', function () {
         inputDNI.classList.remove('inputError');
     });
 
-    inputBirthdate.addEventListener('focus', function() {
+    inputBirthdate.addEventListener('focus', function () {
         inputBirthdate.classList.remove('inputError');
     });
 
-    inputTelephone.addEventListener('focus', function() {
+    inputTelephone.addEventListener('focus', function () {
         inputTelephone.classList.remove('inputError');
     });
 
-    inputAddress.addEventListener('focus', function() {
+    inputAddress.addEventListener('focus', function () {
         inputAddress.classList.remove('inputError');
     });
 
-    inputCity.addEventListener('focus', function() {
+    inputCity.addEventListener('focus', function () {
         inputCity.classList.remove('inputError');
     });
 
-    inputPostalCode.addEventListener('focus', function() {
+    inputPostalCode.addEventListener('focus', function () {
         inputPostalCode.classList.remove('inputError');
     });
 
-    inputEmail.addEventListener('focus', function() {
+    inputEmail.addEventListener('focus', function () {
         inputEmail.classList.remove('inputError');
     });
 
-    inputPassword.addEventListener('focus', function() {
+    inputPassword.addEventListener('focus', function () {
         inputPassword.classList.remove('inputError');
     });
 
-    inputPasswordRepeat.addEventListener('focus', function() {
+    inputPasswordRepeat.addEventListener('focus', function () {
         inputPasswordRepeat.classList.remove('inputError');
     });
 
@@ -264,6 +261,8 @@ document.addEventListener('load', function() {
         var queryParamsArray = [];
 
         for (var input of Object.entries(inputs)) {
+            // Input at index 0 is the name and input and index 1 is its value
+            // If it is the birthdate then ensure DD/MM/YYYY format
             if (input[0] == 'dob') {
                 var date = new Date(input[1]);
                 input[1] = date.toLocaleDateString('en-US', {
@@ -276,6 +275,7 @@ document.addEventListener('load', function() {
             queryParamsArray.push(input[0] + '=' + input[1]);
         }
 
+        // Join params in a string
         var queryParams = queryParamsArray.join('&');
 
         fetch('https://basp-m2022-api-rest-server.herokuapp.com/signup?' + queryParams)
@@ -284,6 +284,7 @@ document.addEventListener('load', function() {
                 if (data.success == true) {
                     alert('Request was successful!: ' + data.msg);
                 } else {
+                    // Errors are in an array, so I should join them in a string to display in alert
                     var errorMessage = '';
                     data.errors.forEach((error) => errorMessage += error.msg + '\n');
                     alert('There was an error:\n' + errorMessage);
@@ -291,9 +292,12 @@ document.addEventListener('load', function() {
             });
     }
 
-    document.getElementById('create').addEventListener('click', function(event) {
+    // When sign up form is submitted
+    document.getElementById('create').addEventListener('click', function (event) {
         event.preventDefault();
 
+        submitSignUp();
+        // Inputs validation stored on variables to use later on error alert if any
         var inputs = {
             name: validateName(),
             lastname: validateLastname(),
@@ -308,10 +312,14 @@ document.addEventListener('load', function() {
             passwordRepeat: validatePasswordRepeat(),
         };
 
+        // Array to collect errors if there are any
         var errors = [];
 
+        // Iterating the object with inputs validations thanks to Object.entries() method
         for (var input of Object.entries(inputs)) {
+            // Input id and name
             var inputName = input[0];
+            // Validation result
             var inputValid = input[1];
 
             if (inputValid == false) {
@@ -321,25 +329,32 @@ document.addEventListener('load', function() {
         }
 
         if (errors.length > 0) {
+            // Using \n to add a line break after each message content inside the alert popup
             alert('ERRORS:\n' + errors.join('\n'));
         } else {
 
             var accountInfo = '';
             for (var input of Object.entries(inputs)) {
+                // Input id/name is on index 0 of input
                 var inputName = input[0];
+                // Get label for that input
                 var inputLabel = document.querySelector('label[for="' + inputName + '"]').innerText;
+                // Get value of that input
                 var inputValue = document.getElementById(inputName).value;
 
+                // For the birthdate input
                 if (inputName == 'birthdate') {
+                    // Ensure to "store" birth date as dd/mm/aaaa
                     inputValue = new Date(inputValue).toLocaleDateString('es-AR');
                 }
+
+                // Keep track of this input info
+                // Using \n to add a line break between input info
                 accountInfo += inputLabel + ' ' + inputValue + '\n';
             }
 
             alert('User created successfully!\n' + accountInfo);
-            submitSignUp();
         }
     });
 
 });
-

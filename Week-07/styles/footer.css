@@ -6,11 +6,13 @@ footer {
     padding: 5%;
     background-color: #373867;
 }
+
 footer p {
     padding: 3%;
     color: white;
     font-size: 80%;
 }
+
 @media screen and (min-width:1024px) {
     footer {
         margin-top: 0 !important;
