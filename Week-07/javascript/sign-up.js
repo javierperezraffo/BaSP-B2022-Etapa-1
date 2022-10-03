@@ -41,7 +41,7 @@ document.addEventListener('load', function() {
 
     function validateDNI() {
         var dni = inputDNI.value.trim();
-        var regex = /(\d+)/g;
+        var regex = /(\d+)/g
         var valid = dni.length > 7 && regex.test(dni);
 
         if (valid == true) {
@@ -66,7 +66,7 @@ document.addEventListener('load', function() {
 
     function validateTelephone() {
         var telephone = inputTelephone.value.trim();
-        var regex = /(\d+)/g;
+        var regex = /(\d+)/g
         var valid = telephone.length == 10 && regex.test(telephone);
 
         if (valid == true) {
@@ -246,6 +246,51 @@ document.addEventListener('load', function() {
         inputPasswordRepeat.classList.remove('inputError');
     });
 
+
+    function submitSignUp() {
+        var inputs = {
+            name: inputName.value,
+            lastName: inputLastname.value,
+            dni: inputDNI.value,
+            dob: inputBirthdate.value,
+            phone: inputTelephone.value,
+            address: inputAddress.value,
+            city: inputCity.value,
+            zip: inputPostalCode.value,
+            email: inputEmail.value,
+            password: inputPassword.value,
+        };
+
+        var queryParamsArray = [];
+
+        for (var input of Object.entries(inputs)) {
+            if (input[0] == 'dob') {
+                var date = new Date(input[1]);
+                input[1] = date.toLocaleDateString('en-US', {
+                    year: 'numeric',
+                    month: '2-digit',
+                    day: '2-digit',
+                    timeZone: 'UTC',
+                });
+            }
+            queryParamsArray.push(input[0] + '=' + input[1]);
+        }
+
+        var queryParams = queryParamsArray.join('&');
+
+        fetch('https://basp-m2022-api-rest-server.herokuapp.com/signup?' + queryParams)
+            .then((response) => response.json())
+            .then((data) => {
+                if (data.success == true) {
+                    alert('Request was successful!: ' + data.msg);
+                } else {
+                    var errorMessage = '';
+                    data.errors.forEach((error) => errorMessage += error.msg + '\n');
+                    alert('There was an error:\n' + errorMessage);
+                }
+            });
+    }
+
     document.getElementById('create').addEventListener('click', function(event) {
         event.preventDefault();
 
@@ -292,6 +337,7 @@ document.addEventListener('load', function() {
             }
 
             alert('User created successfully!\n' + accountInfo);
+            submitSignUp();
         }
     });
 
