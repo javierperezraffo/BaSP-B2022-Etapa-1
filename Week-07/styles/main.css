@@ -4,7 +4,7 @@ main {
     background-color: #373867;
 }
 
-.keepTrack {
+.keep-track {
     font-weight: bold;
     width: 350px;
     font-size: 20px;
@@ -13,7 +13,7 @@ main {
     margin-left: 20px;
 }
 
-.greenBubble {
+.green-bubble {
     align-self: center;
     line-height: 170%;
     letter-spacing: 0.125em;
@@ -26,18 +26,18 @@ main {
     margin: 8% 8%;
 }
 
-.infoContainer {
+.info-container {
     display: flex;
     color: white;
 }
 
-.infoContainer h2 {
+.info-container h2 {
     font-weight: bold;
     font-size: 35px;
     text-align: center;
 }
 
-.infoContainer p {
+.info-container p {
     font-size: 16px;
     text-align: left;
     margin-left: 45px;
@@ -45,31 +45,31 @@ main {
     line-height: 1, 5;
 }
 
-.infoContainer h4 {
+.info-container h4 {
     font-size: 20px;
     text-align: center;
     top: 5px;
 }
 
-.infoCircleFather {
+.info-circle-father {
     display: none;
 }
 
-.greenSquares {
+.green-squares {
     display: flex;
     align-items: center;
     justify-content: center;
     padding-top: 5%;
 }
 
-.greenSquaresContainer {
+.green-squares-container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     max-width: 500px;
 }
 
-.greenItem p {
+.green-item p {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -79,7 +79,7 @@ main {
     margin-bottom: 5px;
 }
 
-.greenItem {
+.green-item {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -93,23 +93,23 @@ main {
     margin: 20px;
 }
 
-.whiteBackground {
+.white-background {
     background-color: white;
 }
 
-.gigatechHistory {
+.gigatech-history {
     padding-top: 8%;
     background-color: #D9D9D947;
 }
 
-.gigatechHistory h2 {
+.gigatech-history h2 {
     margin: 2%;
     text-align: center;
     font-size: 32px;
     font-weight: bold;
 }
 
-.gigatechHistory p {
+.gigatech-history p {
     text-align: justify;
     padding: 5%;
     line-height: 1.4;
@@ -117,7 +117,7 @@ main {
     margin-right: 6%;
 }
 
-.requestInfoTable {
+.request-info-table {
     display: flex;
     margin: 5%;
     margin-left: 5%;
@@ -126,13 +126,13 @@ main {
     line-height: 2.2;
 }
 
-.requestInfoTable h2 {
+.request-info-table h2 {
     font-weight: bold;
     font-size: 150%;
     margin-bottom: 5%;
 }
 
-.requestInfoTable fieldset {
+.request-info-table fieldset {
     display: flex;
     flex-direction: column;
 }
@@ -147,7 +147,7 @@ button {
 }
 
 input[type=submit],
-.requestInfoTable button {
+.request-info-table button {
     width: 100%;
     background-color: #AACE9B;
     margin: 8px 0;
@@ -158,7 +158,7 @@ input[type=submit],
     align-self: justify;
 }
 
-.extrasContainers {
+.extras-containers {
     display: flex;
     margin-bottom: 60px;
     padding: 10px;
@@ -178,28 +178,28 @@ input[type=submit],
     text-decoration: none;
 }
 
-.contactUs {
+.contact-us {
     text-align: center;
 }
 
-.contactUs h3 {
+.contact-us h3 {
     font-size: 2em;
     margin: 20px;
 }
 
-.contactUs h4 {
+.contact-us h4 {
     display: inline;
     font-size: 14px;
 }
 
-.contactUs img {
+.contact-us img {
     margin-top: 25px;
     max-width: 25px;
     filter: invert();
 }
 
 @media screen and (min-width:480px) {
-    .keepTrack {
+    .keep-track {
         position: absolute;
         top: 170px;
         font-weight: bold;
@@ -208,7 +208,7 @@ input[type=submit],
         width: 40%;
     }
 
-    .greenBubble {
+    .green-bubble {
         position: absolute;
         align-self: flex-end;
         width: 180px;
@@ -225,11 +225,11 @@ input[type=submit],
         top: 13%;
     }
 
-    .infoContainer {
+    .info-container {
         display: flex;
     }
 
-    .infoContainer h2 {
+    .info-container h2 {
         font-weight: bold;
         font-size: 25px;
         color: #AACE9B;
@@ -238,20 +238,20 @@ input[type=submit],
         text-align: start;
     }
 
-    .infoContainer p {
+    .info-container p {
         text-align: start;
         line-height: 1.1;
         margin-top: 25px;
     }
 
-    .infoContainer h4 {
+    .info-container h4 {
         flex-flow: row wrap;
         font-size: 20px;
         margin-top: 30px;
         margin-left: 40px;
     }
 
-    .infoCircleFather {
+    .info-circle-father {
         display: flex;
         flex-direction: column;
         margin-right: 4%;
@@ -259,7 +259,7 @@ input[type=submit],
         right: 100px;
     }
 
-    .infoCircle {
+    .info-circle {
         display: flex;
         flex-direction: center;
         background-color: #373867;
@@ -273,7 +273,7 @@ input[type=submit],
         border-radius: 50%;
     }
 
-    .infoCircle h3 {
+    .info-circle h3 {
         align-items: center;
         align-self: center;
         padding-top: 70px;
@@ -283,24 +283,24 @@ input[type=submit],
         padding-left: 7px;
     }
 
-    .greenSquares {
+    .green-squares {
         background-color: white;
         width: 100%;
     }
 
-    .flexContainer {
+    .flex-container {
         display: flex;
         flex-direction: column;
     }
 
-    .gigatechHistory {
+    .gigatech-history {
         margin-left: 5%;
         margin-right: 5%;
         padding-top: 20px;
         margin-bottom: 8%;
     }
 
-    .requestInfoTable {
+    .request-info-table {
         order: -1;
     }
 }
@@ -313,7 +313,7 @@ input[type=submit],
         display: grid;
     }
 
-    .keeptrack {
+    .keep-track {
         font-weight: bold;
         width: 300px;
         font-size: 40px;
@@ -323,29 +323,29 @@ input[type=submit],
         left: 20px;
     }
 
-    .greenBubble {
+    .green-bubble {
         top: 22%;
     }
 
-    .infoContainer h2 {
+    .info-container h2 {
         color: #000000;
         margin-left: 20%;
         font-size: 45px;
         font-weight: normal;
     }
 
-    .infoContainer p {
+    .info-container p {
         color: #373867;
         width: 72%;
         line-height: 1.5;
         font-size: 20px;
     }
 
-    .infoContainer h4 {
+    .info-container h4 {
         color: #373867;
     }
 
-    .infoCircleFather {
+    .info-circle-father {
         display: flex;
         flex-direction: center;
         margin-right: 4%;
@@ -353,7 +353,7 @@ input[type=submit],
         right: 100px;
     }
 
-    .infoCircle {
+    .info-circle {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -361,16 +361,16 @@ input[type=submit],
         height: 150px;
     }
 
-    .infoCircle.alt {
+    .info-circle.alt {
         transform: translateX(-70px);
     }
 
-    .infoCircle h3 {
+    .info-circle h3 {
         padding: 0;
         height: auto;
     }
 
-    .greenSquares {
+    .green-squares {
         display: flex;
         width: 100%;
         justify-content: center;
@@ -382,7 +382,7 @@ input[type=submit],
         margin-right: 2%;
     }
 
-    .gigatechHistory {
+    .gigatech-history {
         order: -1;
         margin-top: 5%;
     }

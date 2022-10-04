@@ -35,32 +35,32 @@ aside {
         margin-right: 10px;
     }
 
-    .asideSubmenu {
+    .aside-submenu {
         margin: 40px 60px;
         color: white;
     }
 
-    .contactUs {
+    .contact-us {
         display: none;
     }
 
-    .asideContact {
+    .aside-contact {
         margin-bottom: 20px;
     }
 
-    .asideContact h3 {
+    .aside-contact h3 {
         font-size: 2em;
         margin: 20px;
         color: black;
     }
 
-    .asideContact h4 {
+    .aside-contact h4 {
         display: inline;
         font-size: 13px;
         color: black;
     }
 
-    .asideContact img {
+    .aside-contact img {
         max-width: 25px;
     }
 }

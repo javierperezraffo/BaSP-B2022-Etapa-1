@@ -1,4 +1,4 @@
-.messageError {
+.message-error {
     display: none;
     color: brown;
     font-size: 0.85em;
@@ -8,10 +8,10 @@
     border: 1px solid brown !important;
 }
 
-.inputError+.messageError {
+.inputError+.message-error {
     display: block;
 }
 
-.requestInfoTable button {
+.request-info-table button {
     margin-top: 30px;
 }
