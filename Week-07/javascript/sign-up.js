@@ -1,13 +1,36 @@
 document.addEventListener('DOMContentLoaded', function () {
 
+    var storedUser = localStorage.getItem('userInfo');
+
+    if (storedUser != undefined) {
+        storedUser = JSON.parse(storedUser);
+
+        for (var entry of Object.entries(storedUser)) {
+
+            var id = entry[0];
+            var value = entry[1];
+
+            var input = document.getElementById(id);
+            if (input != undefined) {
+                input.value = value;
+            }
+
+            if (id == 'password') {
+                document.getElementById('passwordRepeat').value = value;
+            }
+
+        }
+
+    }
+
     var inputName = document.getElementById('name');
-    var inputLastname = document.getElementById('lastname');
+    var inputLastname = document.getElementById('lastName');
     var inputDNI = document.getElementById('dni');
-    var inputBirthdate = document.getElementById('birthdate');
-    var inputTelephone = document.getElementById('telephone');
+    var inputBirthdate = document.getElementById('dob');
+    var inputTelephone = document.getElementById('phone');
     var inputAddress = document.getElementById('address');
     var inputCity = document.getElementById('city');
-    var inputPostalCode = document.getElementById('postalCode');
+    var inputPostalCode = document.getElementById('zip');
     var inputEmail = document.getElementById('email');
     var inputPassword = document.getElementById('password');
     var inputPasswordRepeat = document.getElementById('passwordRepeat');
@@ -40,8 +63,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function validateDNI() {
         var dni = inputDNI.value.trim();
-        var regex = /(\d+)/g;
-        var valid = dni.length > 7 && regex.test(dni);
+        var valid = dni.length > 7 && !isNaN(dni);
 
         if (valid == true) {
             inputDNI.classList.remove('inputError');
@@ -53,7 +75,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function validateBirthdate() {
         var birthdate = inputBirthdate.value.trim();
-        var valid = birthdate.length == 10;
+        var regex = /^(0[1-9]|1[012])[/](0[1-9]|[12][0-9]|3[01])[/](19|20)\d\d$/;
+        var valid = birthdate.length == 10 && regex.test(birthdate);
 
         if (valid == true) {
             inputBirthdate.classList.remove('inputError');
@@ -65,8 +88,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function validateTelephone() {
         var telephone = inputTelephone.value.trim();
-        var regex = /(\d+)/g;
-        var valid = telephone.length == 10 && regex.test(telephone);
+        var valid = telephone.length == 10 && !isNaN(telephone);
 
         if (valid == true) {
             inputTelephone.classList.remove('inputError');
@@ -105,8 +127,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function validatePostalCode() {
         var postalCode = inputPostalCode.value.trim();
-        var regex = /^(\d+)/g;
-        var valid = postalCode.length >= 4 && postalCode.length <= 5 && regex.test(postalCode);
+        var valid = postalCode.length >= 4 && postalCode.length <= 5 && !isNaN(postalCode);
 
         if (valid == true) {
             inputPostalCode.classList.remove('inputError');
@@ -243,7 +264,6 @@ document.addEventListener('DOMContentLoaded', function () {
         inputPasswordRepeat.classList.remove('inputError');
     });
 
-
     function submitSignUp() {
         var inputs = {
             name: inputName.value,
@@ -261,8 +281,6 @@ document.addEventListener('DOMContentLoaded', function () {
         var queryParamsArray = [];
 
         for (var input of Object.entries(inputs)) {
-            // Input at index 0 is the name and input and index 1 is its value
-            // If it is the birthdate then ensure DD/MM/YYYY format
             if (input[0] == 'dob') {
                 var date = new Date(input[1]);
                 input[1] = date.toLocaleDateString('en-US', {
@@ -275,16 +293,18 @@ document.addEventListener('DOMContentLoaded', function () {
             queryParamsArray.push(input[0] + '=' + input[1]);
         }
 
-        // Join params in a string
         var queryParams = queryParamsArray.join('&');
 
         fetch('https://basp-m2022-api-rest-server.herokuapp.com/signup?' + queryParams)
             .then((response) => response.json())
             .then((data) => {
                 if (data.success == true) {
+
                     alert('Request was successful!: ' + data.msg);
+
+                    localStorage.setItem('userInfo', JSON.stringify(data.data));
+
                 } else {
-                    // Errors are in an array, so I should join them in a string to display in alert
                     var errorMessage = '';
                     data.errors.forEach((error) => errorMessage += error.msg + '\n');
                     alert('There was an error:\n' + errorMessage);
@@ -292,34 +312,28 @@ document.addEventListener('DOMContentLoaded', function () {
             });
     }
 
-    // When sign up form is submitted
     document.getElementById('create').addEventListener('click', function (event) {
         event.preventDefault();
 
         submitSignUp();
-        // Inputs validation stored on variables to use later on error alert if any
         var inputs = {
             name: validateName(),
-            lastname: validateLastname(),
+            lastName: validateLastname(),
             dni: validateDNI(),
-            birthdate: validateBirthdate(),
-            telephone: validateTelephone(),
+            dob: validateBirthdate(),
+            phone: validateTelephone(),
             address: validateAddress(),
             city: validateCity(),
-            postalCode: validatePostalCode(),
+            zip: validatePostalCode(),
             email: validateEmail(),
             password: validatePassword(),
             passwordRepeat: validatePasswordRepeat(),
         };
 
-        // Array to collect errors if there are any
         var errors = [];
 
-        // Iterating the object with inputs validations thanks to Object.entries() method
         for (var input of Object.entries(inputs)) {
-            // Input id and name
             var inputName = input[0];
-            // Validation result
             var inputValid = input[1];
 
             if (inputValid == false) {
@@ -329,27 +343,19 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
         if (errors.length > 0) {
-            // Using \n to add a line break after each message content inside the alert popup
             alert('ERRORS:\n' + errors.join('\n'));
         } else {
 
             var accountInfo = '';
             for (var input of Object.entries(inputs)) {
-                // Input id/name is on index 0 of input
                 var inputName = input[0];
-                // Get label for that input
                 var inputLabel = document.querySelector('label[for="' + inputName + '"]').innerText;
-                // Get value of that input
                 var inputValue = document.getElementById(inputName).value;
 
-                // For the birthdate input
                 if (inputName == 'birthdate') {
-                    // Ensure to "store" birth date as dd/mm/aaaa
                     inputValue = new Date(inputValue).toLocaleDateString('es-AR');
                 }
 
-                // Keep track of this input info
-                // Using \n to add a line break between input info
                 accountInfo += inputLabel + ' ' + inputValue + '\n';
             }
 
