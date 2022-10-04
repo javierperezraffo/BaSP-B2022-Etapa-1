@@ -4,38 +4,31 @@
     font-size: 0.85em;
     line-height: 1.5;
 }
-
 .inputError {
     border: 1px solid brown !important;
 }
-
 .inputError+.message-error {
     display: block;
 }
-
 .request-info-table {
     margin: 5% auto;
     width: 80vw;
     max-width: 500px;
 }
-
 .request-info-table button {
     display: block;
     margin: 0 auto;
     margin-top: 50px;
 }
-
 .request-info-inputs {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
-
 .request-info-inputs .info-inputs-column-left,
 .request-info-inputs .info-inputs-column-right {
     flex-basis: 50%;
 }
-
 @media screen and (min-width: 480px) {
     .request-info-inputs {
         flex-direction: row;

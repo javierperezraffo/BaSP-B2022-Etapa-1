@@ -1,7 +1,6 @@
 aside {
     display: none;
 }
-
 @media screen and (min-width:1024px) {
     .aside {
         grid-area: 1 / 1 / 6 / 2;
@@ -11,7 +10,6 @@ aside {
         justify-content: space-between;
         background-color: #707070;
     }
-
     .search {
         align-items: center;
         justify-content: center;
@@ -21,7 +19,6 @@ aside {
         padding-left: 90px;
         padding-left: 90px;
     }
-
     .link {
         display: block;
         text-decoration: none;
@@ -29,37 +26,30 @@ aside {
         color: white;
         margin: 30px;
     }
-
     .link img {
         max-width: 20px;
         margin-right: 10px;
     }
-
     .aside-submenu {
         margin: 40px 60px;
         color: white;
     }
-
     .contact-us {
         display: none;
     }
-
     .aside-contact {
         margin-bottom: 20px;
     }
-
     .aside-contact h3 {
         font-size: 2em;
         margin: 20px;
         color: black;
     }
-
     .aside-contact h4 {
         display: inline;
         font-size: 13px;
         color: black;
     }
-
     .aside-contact img {
         max-width: 25px;
     }

@@ -3,7 +3,6 @@ main {
     flex-direction: column;
     background-color: #373867;
 }
-
 .keep-track {
     font-weight: bold;
     width: 350px;
@@ -12,7 +11,6 @@ main {
     margin-top: 20px;
     margin-left: 20px;
 }
-
 .green-bubble {
     align-self: center;
     line-height: 170%;
@@ -25,18 +23,15 @@ main {
     justify-content: center;
     margin: 8% 8%;
 }
-
 .info-container {
     display: flex;
     color: white;
 }
-
 .info-container h2 {
     font-weight: bold;
     font-size: 35px;
     text-align: center;
 }
-
 .info-container p {
     font-size: 16px;
     text-align: left;
@@ -44,31 +39,26 @@ main {
     margin-right: 45px;
     line-height: 1, 5;
 }
-
 .info-container h4 {
     font-size: 20px;
     text-align: center;
     top: 5px;
 }
-
 .info-circle-father {
     display: none;
 }
-
 .green-squares {
     display: flex;
     align-items: center;
     justify-content: center;
     padding-top: 5%;
 }
-
 .green-squares-container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     max-width: 500px;
 }
-
 .green-item p {
     display: flex;
     align-items: center;
@@ -78,7 +68,6 @@ main {
     margin-top: 15px;
     margin-bottom: 5px;
 }
-
 .green-item {
     display: flex;
     flex-direction: column;
@@ -92,23 +81,19 @@ main {
     font-weight: bold;
     margin: 20px;
 }
-
 .white-background {
     background-color: white;
 }
-
 .gigatech-history {
     padding-top: 8%;
     background-color: #D9D9D947;
 }
-
 .gigatech-history h2 {
     margin: 2%;
     text-align: center;
     font-size: 32px;
     font-weight: bold;
 }
-
 .gigatech-history p {
     text-align: justify;
     padding: 5%;
@@ -116,7 +101,6 @@ main {
     margin-left: 6%;
     margin-right: 6%;
 }
-
 .request-info-table {
     display: flex;
     margin: 5%;
@@ -125,18 +109,15 @@ main {
     justify-content: space-around;
     line-height: 2.2;
 }
-
 .request-info-table h2 {
     font-weight: bold;
     font-size: 150%;
     margin-bottom: 5%;
 }
-
 .request-info-table fieldset {
     display: flex;
     flex-direction: column;
 }
-
 input,
 select,
 textarea,
@@ -145,7 +126,6 @@ button {
     border: 1px solid #ccc;
     border-radius: 4px;
 }
-
 input[type=submit],
 .request-info-table button {
     width: 100%;
@@ -157,7 +137,6 @@ input[type=submit],
     font-size: 120%;
     align-self: justify;
 }
-
 .extras-containers {
     display: flex;
     margin-bottom: 60px;
@@ -166,38 +145,31 @@ input[type=submit],
     line-height: 1.7;
     justify-content: space-around;
 }
-
 .item2 ul {
     list-style: decimal;
     margin-left: 18px;
     margin-top: 7px;
 }
-
 .itemA a {
     color: #000000;
     text-decoration: none;
 }
-
 .contact-us {
     text-align: center;
 }
-
 .contact-us h3 {
     font-size: 2em;
     margin: 20px;
 }
-
 .contact-us h4 {
     display: inline;
     font-size: 14px;
 }
-
 .contact-us img {
     margin-top: 25px;
     max-width: 25px;
     filter: invert();
 }
-
 @media screen and (min-width:480px) {
     .keep-track {
         position: absolute;
@@ -207,7 +179,6 @@ input[type=submit],
         color: #AACE9B;
         width: 40%;
     }
-
     .green-bubble {
         position: absolute;
         align-self: flex-end;
@@ -224,11 +195,9 @@ input[type=submit],
         margin: 0;
         top: 13%;
     }
-
     .info-container {
         display: flex;
     }
-
     .info-container h2 {
         font-weight: bold;
         font-size: 25px;
@@ -237,20 +206,17 @@ input[type=submit],
         margin-top: 12%;
         text-align: start;
     }
-
     .info-container p {
         text-align: start;
         line-height: 1.1;
         margin-top: 25px;
     }
-
     .info-container h4 {
         flex-flow: row wrap;
         font-size: 20px;
         margin-top: 30px;
         margin-left: 40px;
     }
-
     .info-circle-father {
         display: flex;
         flex-direction: column;
@@ -258,7 +224,6 @@ input[type=submit],
         margin-top: 13%;
         right: 100px;
     }
-
     .info-circle {
         display: flex;
         flex-direction: center;
@@ -272,7 +237,6 @@ input[type=submit],
         border: 8px solid #707070;
         border-radius: 50%;
     }
-
     .info-circle h3 {
         align-items: center;
         align-self: center;
@@ -282,29 +246,24 @@ input[type=submit],
         font-size: 15px;
         padding-left: 7px;
     }
-
     .green-squares {
         background-color: white;
         width: 100%;
     }
-
     .flex-container {
         display: flex;
         flex-direction: column;
     }
-
     .gigatech-history {
         margin-left: 5%;
         margin-right: 5%;
         padding-top: 20px;
         margin-bottom: 8%;
     }
-
     .request-info-table {
         order: -1;
     }
 }
-
 @media screen and (min-width:1024px) {
     main {
         grid-area: 1 / 2 / 6 / 6;
@@ -312,7 +271,6 @@ input[type=submit],
         width: 100%;
         display: grid;
     }
-
     .keep-track {
         font-weight: bold;
         width: 300px;
@@ -322,29 +280,24 @@ input[type=submit],
         top: 80px;
         left: 20px;
     }
-
     .green-bubble {
         top: 22%;
     }
-
     .info-container h2 {
         color: #000000;
         margin-left: 20%;
         font-size: 45px;
         font-weight: normal;
     }
-
     .info-container p {
         color: #373867;
         width: 72%;
         line-height: 1.5;
         font-size: 20px;
     }
-
     .info-container h4 {
         color: #373867;
     }
-
     .info-circle-father {
         display: flex;
         flex-direction: center;
@@ -352,7 +305,6 @@ input[type=submit],
         margin-top: 10%;
         right: 100px;
     }
-
     .info-circle {
         display: flex;
         justify-content: center;
@@ -360,28 +312,23 @@ input[type=submit],
         width: 150px;
         height: 150px;
     }
-
     .info-circle.alt {
         transform: translateX(-70px);
     }
-
     .info-circle h3 {
         padding: 0;
         height: auto;
     }
-
     .green-squares {
         display: flex;
         width: 100%;
         justify-content: center;
     }
-
     .item {
         padding-top: 10px;
         margin-left: 2%;
         margin-right: 2%;
     }
-
     .gigatech-history {
         order: -1;
         margin-top: 5%;

@@ -3,15 +3,12 @@
     color: brown;
     font-size: 0.85em;
 }
-
 .inputError {
     border: 1px solid brown !important;
 }
-
 .inputError+.message-error {
     display: block;
 }
-
 .request-info-table button {
     margin-top: 30px;
 }

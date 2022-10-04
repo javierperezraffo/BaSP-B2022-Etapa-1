@@ -3,12 +3,10 @@ body {
     flex-direction: column;
     font-family: 'Roboto', sans-serif;
 }
-
 @media screen and (min-width:1024px) {
     * {
         box-sizing: border-box !important;
     }
-
     .main-container {
         display: grid;
         grid-template-columns: 300px 1fr;
