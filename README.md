@@ -15,7 +15,9 @@
     Week 05:
     - In week 05 we were correcting the work done on the previous problem and on the other hand we were doing JavaScript exercises.
     Week 06:
-    - This week we were implementing JavaScript in Trackgenix login and sign-up.
+    - This week we were implementing JavaScript in Trackgenix login and sign-up. 
+    Week 07:
+    - In this week we implemented the use of the API for form data verification.
 
 
 Here you will find clearly explained what our new human resources management software is all about, with countless advantages for effective and intelligent management. We have agents who can guide you to find the customized product that best suits your level of management and with follow-up to continue fine-tuning details over time, accompanying the growth of your company.
