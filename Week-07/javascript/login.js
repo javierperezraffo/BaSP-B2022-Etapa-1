@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var inputPassword = document.getElementById('password');
     function validateEmail() {
         var email = inputEmail.value.trim();
-        var regex = /\S+@\S+\.\S+/;
+        var regex = /^[^@]+@[^@]+\.[a-zA-Z]{2,}$/;
         var valid = regex.test(email);
 
         if (valid == true) {

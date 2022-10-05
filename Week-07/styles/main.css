@@ -1,4 +1,5 @@
 main {
+    position: relative;
     display: flex;
     flex-direction: column;
     background-color: #373867;
@@ -103,11 +104,19 @@ main {
 }
 .request-info-table {
     display: flex;
-    margin: 5%;
-    margin-left: 5%;
-    margin-right: 5%;
+    flex-direction: column;
     justify-content: space-around;
+    margin: 5% auto;
+    width: 90%;
+    max-width: 270px;
     line-height: 2.2;
+}
+.request-info-table a {
+    color: #000000;
+    text-decoration: none;
+}
+.request-info-table a b {
+    font-weight: bold;
 }
 .request-info-table h2 {
     font-weight: bold;
@@ -173,7 +182,7 @@ input[type=submit],
 @media screen and (min-width:480px) {
     .keep-track {
         position: absolute;
-        top: 170px;
+        top: 60px;
         font-weight: bold;
         font-size: 120%;
         color: #AACE9B;
@@ -281,7 +290,10 @@ input[type=submit],
         left: 20px;
     }
     .green-bubble {
-        top: 22%;
+        top: 10%;
+    }
+    .green-squares-container {
+        max-width: 720px;
     }
     .info-container h2 {
         color: #000000;

@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var inputPasswordRepeat = document.getElementById('passwordRepeat');
     function validateName() {
         var name = inputName.value.trim();
-        var regex = /[a-zA-Z]/g;
+        var regex = /^[A-Za-z]+$/;
         var valid = name.length > 3 && regex.test(name);
         if (valid == true) {
             inputName.classList.remove('inputError');
@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
     function validateLastname() {
         var lastname = inputLastname.value.trim();
-        var regex = /[a-zA-Z]/g;
+        var regex = /^[A-Za-z]+$/;
         var valid = lastname.length > 3 && regex.test(lastname);
         if (valid == true) {
             inputLastname.classList.remove('inputError');
@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', function () {
     function validateAddress() {
         var address = inputAddress.value.trim();
         var regex = /^(?=.*[a-zA-Z])(?=.*[0-9])/;
-        var hasSpaceInBetween = address.indexOf(' ') > 0 && address.indexOf(' ') < address.length;
+        var hasSpaceInBetween = address.indexOf(' ') > 0 && address.indexOf(' ') < address.length - 1;
         var valid = address.length > 4 && hasSpaceInBetween && regex.test(address);
         if (valid == true) {
             inputAddress.classList.remove('inputError');
@@ -92,7 +92,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
     function validateCity() {
         var city = inputCity.value.trim();
-        var regex = /[a-zA-Z0-9]/g;
+        var regex = /^[A-Za-z0-9]+$/;
         var valid = city.length > 3 && regex.test(city);
         if (valid == true) {
             inputCity.classList.remove('inputError');
@@ -113,7 +113,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
     function validateEmail() {
         var email = inputEmail.value.trim();
-        var regex = /\S+@\S+\.\S+/;
+        var regex = /^[^@]+@[^@]+\.[a-zA-Z]{2,}$/;
         var valid = regex.test(email);
         if (valid == true) {
             inputEmail.classList.remove('inputError');
